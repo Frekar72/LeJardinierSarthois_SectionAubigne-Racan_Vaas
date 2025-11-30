@@ -17,6 +17,17 @@
 - [x] Sauvegarde des images originales dans images/originals/
 - [x] Vérification des résultats (réduction ~85% de la taille)
 
+### Phase 2 : Fondations du site web
+- [x] Création de la structure src/ (pages/, css/, js/, content/)
+- [x] Création du fichier .claude.md (contexte complet)
+- [x] Création de requirements.md (spécifications)
+- [x] Création de architecture.md (architecture technique)
+- [x] Initialisation Git et premier commit
+- [x] Création de la landing page (index.html)
+- [x] Configuration Tailwind CSS (via CDN)
+- [x] Création des styles custom (custom.css)
+- [x] Création du JavaScript principal (main.js)
+
 ---
 
 ## 🔄 En cours
@@ -27,8 +38,12 @@ _Aucune tâche en cours pour le moment._
 
 ## 📋 À faire
 
-### Phase 2 : Développement du site web
-_Les tâches seront définies en fonction de vos besoins._
+### Phase 3 : Pages secondaires
+- [ ] Créer page Actualités (actualites.html)
+- [ ] Créer page Agenda (agenda.html)
+- [ ] Créer page Galerie (galerie.html)
+- [ ] Créer page Contact (contact.html)
+- [ ] Créer page À propos (a-propos.html)
 
 #### Contenu
 - [ ] Définir la structure du site (pages principales)

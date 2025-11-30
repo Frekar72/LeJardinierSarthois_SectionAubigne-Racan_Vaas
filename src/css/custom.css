@@ -1,0 +1,86 @@
+/*
+ * Custom CSS - Le Jardinier Sarthois
+ * Styles complémentaires à Tailwind CSS
+ */
+
+/* Animations personnalisées */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-out;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Amélioration de la lisibilité */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus visible pour accessibilité */
+a:focus,
+button:focus {
+    outline: 2px solid #ea580c;
+    outline-offset: 2px;
+}
+
+/* Transitions globales */
+* {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/* Effet de survol sur les images */
+img {
+    transition: transform 0.3s ease;
+}
+
+/* Effet card hover */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Style pour les liens */
+a {
+    text-decoration: none;
+}
+
+/* Loading state */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Print styles */
+@media print {
+    header nav,
+    footer,
+    .no-print {
+        display: none;
+    }
+}
