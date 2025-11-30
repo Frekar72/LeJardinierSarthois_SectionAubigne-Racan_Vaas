@@ -13,6 +13,12 @@
 - **Hébergement** : GitHub Pages (gratuit)
 - **Build** : Aucun (site statique pur)
 
+### Dépôt GitHub
+- **URL** : https://github.com/Frekar72/LeJardinierSarthois_SectionAubigne-Racan_Vaas
+- **Propriétaire** : Frekar72
+- **Branche principale** : main
+- **GitHub Pages** : https://frekar72.github.io/LeJardinierSarthois_SectionAubigne-Racan_Vaas/
+
 ### Schéma de l'architecture
 
 ```
@@ -33,6 +39,7 @@
                        │
 ┌─────────────────────────────────────────────────────────┐
 │              Repository GitHub (origin)                  │
+│  github.com/Frekar72/LeJardinier...SectionAubigne...   │
 │  ┌──────────────────────────────────────────────────┐  │
 │  │         Code source + fichiers Markdown           │  │
 │  └──────────────────────────────────────────────────┘  │
@@ -505,15 +512,15 @@ Site mis à jour automatiquement
 - ✅ Domaine custom possible
 
 **Configuration :**
-1. Repository GitHub public ou privé
+1. Repository GitHub : https://github.com/Frekar72/LeJardinierSarthois_SectionAubigne-Racan_Vaas
 2. Settings → Pages
 3. Source : Deploy from branch `main`
-4. Folder : `/` ou `/docs` (selon choix)
-5. URL : `https://username.github.io/le_jardinier_sarthois`
+4. Folder : `/` (root)
+5. URL : https://frekar72.github.io/LeJardinierSarthois_SectionAubigne-Racan_Vaas/
 
 **Domaine personnalisé (optionnel) :**
-- Acheter domaine (ex: `lejardiniers arthois.fr`)
-- Configurer DNS : CNAME vers `username.github.io`
+- Acheter domaine (ex: `lejardinier-sarthois.fr`)
+- Configurer DNS : CNAME vers `frekar72.github.io`
 - Ajouter fichier `CNAME` à la racine du repo
 
 ### 5.2 Alternatives hébergement
