@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Actualités de l'association Le Jardinier Sarthois - Section Aubigné-Racan / Vaas. Découvrez nos dernières nouvelles et activités.">
+    <meta name="keywords" content="actualités, news, jardinier sarthois, aubigné-racan, vaas, association jardinage, sarthe">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Actualités - Le Jardinier Sarthois">
+    <meta property="og:description" content="Suivez les actualités de l'association Le Jardinier Sarthois">
+    <meta property="og:image" content="../../public/images/20251019_092743.jpg">
+    <meta property="og:url" content="https://frekar72.github.io/LeJardinierSarthois_SectionAubigne-Racan_Vaas/src/pages/actualites.html">
+
+    <title>Actualités - Le Jardinier Sarthois</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuration Tailwind personnalisée -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'jardin-vert': {
+                            light: '#4a7c2f',
+                            DEFAULT: '#2d5016',
+                            dark: '#1a300d',
+                        },
+                        'jardin-orange': {
+                            light: '#f59e0b',
+                            DEFAULT: '#ea580c',
+                        },
+                        'jardin-violet': '#a855f7',
+                        'jardin-rose': '#ec4899',
+                        'jardin-beige': '#fef3c7',
+                        'jardin-creme': '#fef5e7',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/custom.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-white">
+
+    <!-- Header / Navigation -->
+    <header class="bg-jardin-vert text-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo / Nom -->
+                <div class="flex items-center space-x-3">
+                    <svg class="w-10 h-10 text-jardin-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path>
+                    </svg>
+                    <div>
+                        <h1 class="text-2xl font-bold">Le Jardinier Sarthois</h1>
+                        <p class="text-sm text-jardin-beige">Aubigné-Racan • Vaas</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Desktop -->
+                <ul class="hidden md:flex space-x-8 items-center">
+                    <li><a href="../index.html" class="hover:text-jardin-orange transition-colors">Accueil</a></li>
+                    <li><a href="a-propos.html" class="hover:text-jardin-orange transition-colors">À propos</a></li>
+                    <li><a href="actualites.html" class="hover:text-jardin-orange transition-colors font-medium border-b-2 border-jardin-orange pb-1">Actualités</a></li>
+                    <li><a href="agenda.html" class="hover:text-jardin-orange transition-colors">Agenda</a></li>
+                    <li><a href="galerie.html" class="hover:text-jardin-orange transition-colors">Galerie</a></li>
+                    <li><a href="contact.html" class="bg-jardin-orange hover:bg-jardin-orange-light px-6 py-2 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">Contact</a></li>
+                </ul>
+
+                <!-- Menu Burger Mobile -->
+                <button id="mobileMenuBtn" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="../index.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Accueil</a></li>
+                    <li><a href="a-propos.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">À propos</a></li>
+                    <li><a href="actualites.html" class="block py-2 px-4 bg-jardin-vert-dark rounded transition-colors font-semibold">Actualités</a></li>
+                    <li><a href="agenda.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Agenda</a></li>
+                    <li><a href="galerie.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Galerie</a></li>
+                    <li><a href="contact.html" class="block py-2 px-4 bg-jardin-orange rounded hover:bg-jardin-orange-light transition-colors font-semibold">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-jardin-vert text-white py-16 md:py-24">
+        <div class="absolute inset-0 bg-jardin-vert"></div>
+
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Actualités</h1>
+            <p class="text-lg md:text-xl text-jardin-beige max-w-2xl mx-auto">
+                Suivez nos dernières nouvelles et activités
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+
+        <!-- Section Actualités -->
+        <section class="mb-16">
+            <div class="max-w-4xl mx-auto space-y-8">
+
+                <!-- Article 1 : Assemblée Générale -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img src="../../public/images/20251019_093153.jpg"
+                                 alt="Assemblée Générale"
+                                 class="w-full h-64 md:h-full object-cover"
+                                 loading="lazy">
+                        </div>
+                        <div class="md:w-2/3 p-6 md:p-8">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="bg-jardin-orange text-white text-xs font-semibold px-3 py-1 rounded-full">ÉVÉNEMENT</span>
+                                <span class="text-gray-500 text-sm">Janvier 2026</span>
+                            </div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-jardin-vert mb-3">Assemblée Générale 2026</h2>
+                            <p class="text-gray-700 mb-4">
+                                Notre Assemblée Générale annuelle aura lieu le <strong>7 février 2026 à 14h30</strong> à la salle des fêtes de Vaas.
+                                Tous les adhérents sont invités à participer pour faire le bilan de l'année écoulée et préparer ensemble la saison 2026.
+                            </p>
+                            <p class="text-gray-700 mb-4">
+                                Au programme : présentation du rapport d'activités, rapport financier, projets pour 2026 et moment convivial autour d'une collation.
+                            </p>
+                            <a href="agenda.html" class="inline-flex items-center text-jardin-orange font-semibold hover:text-jardin-orange-light transition">
+                                Voir l'agenda
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 : Lâchers de truite -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img src="../../public/images/20251019_092911.jpg"
+                                 alt="Lâchers de truite"
+                                 class="w-full h-64 md:h-full object-cover"
+                                 loading="lazy">
+                        </div>
+                        <div class="md:w-2/3 p-6 md:p-8">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="bg-jardin-violet text-white text-xs font-semibold px-3 py-1 rounded-full">PARTENARIAT</span>
+                                <span class="text-gray-500 text-sm">Février - Avril 2026</span>
+                            </div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-jardin-vert mb-3">Participation aux lâchers de truite</h2>
+                            <p class="text-gray-700 mb-4">
+                                La section d'Aubigné-Vaas sera présente lors des lâchers de truite organisés par la mairie d'Aubigné-Racan
+                                au plan d'eau de la commune, pendant les mois de février, mars et avril 2026.
+                            </p>
+                            <p class="text-gray-700 mb-4">
+                                Une belle occasion de rencontrer les habitants et de faire découvrir notre association lors de ces événements conviviaux.
+                            </p>
+                            <a href="agenda.html" class="inline-flex items-center text-jardin-orange font-semibold hover:text-jardin-orange-light transition">
+                                En savoir plus
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 : Fête de la Terre -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img src="../../public/images/20251019_092756.jpg"
+                                 alt="Fête de la Terre"
+                                 class="w-full h-64 md:h-full object-cover"
+                                 loading="lazy">
+                        </div>
+                        <div class="md:w-2/3 p-6 md:p-8">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="bg-jardin-vert text-white text-xs font-semibold px-3 py-1 rounded-full">ÉVÉNEMENT</span>
+                                <span class="text-gray-500 text-sm">Avril 2026</span>
+                            </div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-jardin-vert mb-3">Fête de la Terre 2026</h2>
+                            <p class="text-gray-700 mb-4">
+                                Rendez-vous le <strong>26 avril 2026</strong> à Aubigné-Racan pour la Fête de la Terre !
+                                Notre section sera présente pour célébrer la nature et partager notre passion du jardinage avec le public.
+                            </p>
+                            <p class="text-gray-700 mb-4">
+                                Au programme : exposition de nos productions, conseils jardinage, échanges de plants et bien d'autres surprises.
+                                Un événement à ne pas manquer pour tous les amoureux de la nature !
+                            </p>
+                            <a href="agenda.html" class="inline-flex items-center text-jardin-orange font-semibold hover:text-jardin-orange-light transition">
+                                Voir les détails
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 : Nouvelle saison -->
+                <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img src="../../public/images/20251019_093034.jpg"
+                                 alt="Nouvelle saison"
+                                 class="w-full h-64 md:h-full object-cover"
+                                 loading="lazy">
+                        </div>
+                        <div class="md:w-2/3 p-6 md:p-8">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="bg-jardin-rose text-white text-xs font-semibold px-3 py-1 rounded-full">INFO</span>
+                                <span class="text-gray-500 text-sm">Janvier 2026</span>
+                            </div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-jardin-vert mb-3">Nouvelle saison de jardinage</h2>
+                            <p class="text-gray-700 mb-4">
+                                La nouvelle saison 2026 démarre avec de nombreux projets pour notre section d'Aubigné-Racan / Vaas.
+                                Ateliers pratiques, partage de connaissances et moments conviviaux sont au programme.
+                            </p>
+                            <p class="text-gray-700 mb-4">
+                                Que vous soyez jardinier débutant ou expérimenté, rejoignez-nous pour partager votre passion et apprendre de nouvelles techniques de jardinage écologique.
+                            </p>
+                            <a href="a-propos.html" class="inline-flex items-center text-jardin-orange font-semibold hover:text-jardin-orange-light transition">
+                                Découvrir l'association
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Section Newsletter -->
+        <section class="bg-gradient-to-r from-jardin-vert to-jardin-vert-light text-white rounded-2xl p-8 md:p-12 text-center shadow-xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Restez informé</h2>
+            <p class="text-xl text-jardin-beige mb-8 max-w-2xl mx-auto">
+                Contactez-nous pour ne manquer aucune actualité de l'association !
+            </p>
+            <a href="contact.html" class="inline-block bg-white text-jardin-vert font-semibold px-8 py-4 rounded-lg hover:bg-jardin-beige transition shadow-lg hover:shadow-xl transform hover:scale-105">
+                Nous contacter
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-jardin-vert text-white mt-16">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Colonne 1 : À propos -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <span class="text-2xl mr-2">🌱</span>
+                        Le Jardinier Sarthois
+                    </h3>
+                    <p class="text-jardin-beige text-sm">
+                        Association de jardinage de la section Aubigné-Racan / Vaas.
+                        Partage de connaissances et passion du jardinage.
+                    </p>
+                </div>
+
+                <!-- Colonne 2 : Navigation -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../index.html" class="text-jardin-beige hover:text-white transition">Accueil</a></li>
+                        <li><a href="a-propos.html" class="text-jardin-beige hover:text-white transition">À propos</a></li>
+                        <li><a href="actualites.html" class="text-white font-semibold">Actualités</a></li>
+                        <li><a href="agenda.html" class="text-jardin-beige hover:text-white transition">Agenda</a></li>
+                        <li><a href="galerie.html" class="text-jardin-beige hover:text-white transition">Galerie</a></li>
+                        <li><a href="contact.html" class="text-jardin-beige hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : Contact rapide -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact rapide</h3>
+                    <ul class="space-y-2 text-sm text-jardin-beige">
+                        <li>📧 <a href="mailto:claude.monique.pean@gmail.com" class="hover:text-white transition">Claude Péan (Secrétaire)</a></li>
+                        <li>📧 <a href="mailto:jean-pierre.surut@orange.fr" class="hover:text-white transition">Jean-Pierre Surut (Président)</a></li>
+                        <li>📍 Aubigné-Racan / Vaas, Sarthe (72)</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-jardin-vert-light mt-8 pt-8 text-center text-sm text-jardin-beige">
+                <p>&copy; 2025 Le Jardinier Sarthois - Section Aubigné-Racan / Vaas. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script>
+        // Menu mobile toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn?.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
