@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galerie photos de l'association Le Jardinier Sarthois - Section Aubigné-Racan / Vaas. Découvrez nos activités et réalisations.">
+    <meta name="keywords" content="galerie, photos, jardinier sarthois, aubigné-racan, vaas, association jardinage, sarthe">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Galerie - Le Jardinier Sarthois">
+    <meta property="og:description" content="Découvrez en images les activités de l'association Le Jardinier Sarthois">
+    <meta property="og:image" content="../../public/images/20251019_092743.jpg">
+    <meta property="og:url" content="https://frekar72.github.io/LeJardinierSarthois_SectionAubigne-Racan_Vaas/src/pages/galerie.html">
+
+    <title>Galerie - Le Jardinier Sarthois</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuration Tailwind personnalisée -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'jardin-vert': {
+                            light: '#4a7c2f',
+                            DEFAULT: '#2d5016',
+                            dark: '#1a300d',
+                        },
+                        'jardin-orange': {
+                            light: '#f59e0b',
+                            DEFAULT: '#ea580c',
+                        },
+                        'jardin-violet': '#a855f7',
+                        'jardin-rose': '#ec4899',
+                        'jardin-beige': '#fef3c7',
+                        'jardin-creme': '#fef5e7',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/custom.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-white">
+
+    <!-- Header / Navigation -->
+    <header class="bg-jardin-vert text-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo / Nom -->
+                <div class="flex items-center space-x-3">
+                    <svg class="w-10 h-10 text-jardin-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path>
+                    </svg>
+                    <div>
+                        <h1 class="text-2xl font-bold">Le Jardinier Sarthois</h1>
+                        <p class="text-sm text-jardin-beige">Aubigné-Racan • Vaas</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Desktop -->
+                <ul class="hidden md:flex space-x-8 items-center">
+                    <li><a href="../index.html" class="hover:text-jardin-orange transition-colors">Accueil</a></li>
+                    <li><a href="a-propos.html" class="hover:text-jardin-orange transition-colors">À propos</a></li>
+                    <li><a href="actualites.html" class="hover:text-jardin-orange transition-colors">Actualités</a></li>
+                    <li><a href="agenda.html" class="hover:text-jardin-orange transition-colors">Agenda</a></li>
+                    <li><a href="galerie.html" class="hover:text-jardin-orange transition-colors font-medium border-b-2 border-jardin-orange pb-1">Galerie</a></li>
+                    <li><a href="contact.html" class="bg-jardin-orange hover:bg-jardin-orange-light px-6 py-2 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">Contact</a></li>
+                </ul>
+
+                <!-- Menu Burger Mobile -->
+                <button id="mobileMenuBtn" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="../index.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Accueil</a></li>
+                    <li><a href="a-propos.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">À propos</a></li>
+                    <li><a href="actualites.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Actualités</a></li>
+                    <li><a href="agenda.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Agenda</a></li>
+                    <li><a href="galerie.html" class="block py-2 px-4 bg-jardin-vert-dark rounded transition-colors font-semibold">Galerie</a></li>
+                    <li><a href="contact.html" class="block py-2 px-4 bg-jardin-orange rounded hover:bg-jardin-orange-light transition-colors font-semibold">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-jardin-vert text-white py-16 md:py-24">
+        <div class="absolute inset-0 bg-jardin-vert"></div>
+
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Galerie</h1>
+            <p class="text-lg md:text-xl text-jardin-beige max-w-2xl mx-auto">
+                Découvrez en images nos activités et nos réalisations
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+
+        <!-- Section Galerie Photos -->
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-jardin-vert text-center mb-12">
+                Nos Photos
+            </h2>
+
+            <!-- Grille de photos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Photo 1 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img src="../../public/images/20251019_092743.jpg"
+                         alt="Activité jardinage - Le Jardinier Sarthois"
+                         class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-jardin-vert/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="font-semibold">Nos activités</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img src="../../public/images/20251019_092756.jpg"
+                         alt="Décoration florale - Le Jardinier Sarthois"
+                         class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-jardin-vert/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="font-semibold">Décoration florale</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img src="../../public/images/20251019_092806.jpg"
+                         alt="Récoltes du jardin - Le Jardinier Sarthois"
+                         class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-jardin-vert/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="font-semibold">Nos récoltes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 4 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img src="../../public/images/20251019_092825.jpg"
+                         alt="Exposition légumes - Le Jardinier Sarthois"
+                         class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-jardin-vert/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="font-semibold">Exposition légumes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 5 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img src="../../public/images/20251019_092844.jpg"
+                         alt="Jardinage en groupe - Le Jardinier Sarthois"
+                         class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-jardin-vert/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="font-semibold">Jardinage en groupe</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 6 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img src="../../public/images/20251019_092911.jpg"
+                         alt="Courges colorées - Le Jardinier Sarthois"
+                         class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-jardin-vert/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="font-semibold">Courges colorées</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 7 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img src="../../public/images/20251019_092915.jpg"
+                         alt="Culture bio - Le Jardinier Sarthois"
+                         class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-jardin-vert/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="font-semibold">Culture bio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 8 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img src="../../public/images/20251019_093034.jpg"
+                         alt="Potager associatif - Le Jardinier Sarthois"
+                         class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-jardin-vert/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="font-semibold">Potager associatif</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 9 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img src="../../public/images/20251019_093059.jpg"
+                         alt="Légumes du jardin - Le Jardinier Sarthois"
+                         class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-jardin-vert/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="font-semibold">Légumes du jardin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 10 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img src="../../public/images/20251019_093153.jpg"
+                         alt="Équipe Le Jardinier Sarthois"
+                         class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-jardin-vert/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="font-semibold">Notre équipe</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 11 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img src="../../public/images/20251019_093157.jpg"
+                         alt="Ateliers jardinage - Le Jardinier Sarthois"
+                         class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-jardin-vert/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="font-semibold">Ateliers jardinage</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 12 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img src="../../public/images/20251019_095054.jpg"
+                         alt="Production locale - Le Jardinier Sarthois"
+                         class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-jardin-vert/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="font-semibold">Production locale</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo 13 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <img src="../../public/images/20251019_095135.jpg"
+                         alt="Savoir-faire jardinier - Le Jardinier Sarthois"
+                         class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-jardin-vert/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <p class="font-semibold">Notre savoir-faire</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section CTA -->
+        <section class="bg-gradient-to-r from-jardin-vert to-jardin-vert-light text-white rounded-2xl p-8 md:p-12 text-center shadow-xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Envie de nous rejoindre ?</h2>
+            <p class="text-xl text-jardin-beige mb-8 max-w-2xl mx-auto">
+                Rejoignez notre association et partagez votre passion du jardinage avec nous !
+            </p>
+            <a href="contact.html" class="inline-block bg-white text-jardin-vert font-semibold px-8 py-4 rounded-lg hover:bg-jardin-beige transition shadow-lg hover:shadow-xl transform hover:scale-105">
+                Nous contacter
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-jardin-vert text-white mt-16">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Colonne 1 : À propos -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <span class="text-2xl mr-2">🌱</span>
+                        Le Jardinier Sarthois
+                    </h3>
+                    <p class="text-jardin-beige text-sm">
+                        Association de jardinage de la section Aubigné-Racan / Vaas.
+                        Partage de connaissances et passion du jardinage.
+                    </p>
+                </div>
+
+                <!-- Colonne 2 : Navigation -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../index.html" class="text-jardin-beige hover:text-white transition">Accueil</a></li>
+                        <li><a href="a-propos.html" class="text-jardin-beige hover:text-white transition">À propos</a></li>
+                        <li><a href="actualites.html" class="text-jardin-beige hover:text-white transition">Actualités</a></li>
+                        <li><a href="agenda.html" class="text-jardin-beige hover:text-white transition">Agenda</a></li>
+                        <li><a href="galerie.html" class="text-white font-semibold">Galerie</a></li>
+                        <li><a href="contact.html" class="text-jardin-beige hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : Contact rapide -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact rapide</h3>
+                    <ul class="space-y-2 text-sm text-jardin-beige">
+                        <li>📧 <a href="mailto:claude.monique.pean@gmail.com" class="hover:text-white transition">Claude Péan (Secrétaire)</a></li>
+                        <li>📧 <a href="mailto:jean-pierre.surut@orange.fr" class="hover:text-white transition">Jean-Pierre Surut (Président)</a></li>
+                        <li>📍 Aubigné-Racan / Vaas, Sarthe (72)</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-jardin-vert-light mt-8 pt-8 text-center text-sm text-jardin-beige">
+                <p>&copy; 2025 Le Jardinier Sarthois - Section Aubigné-Racan / Vaas. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script>
+        // Menu mobile toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn?.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
