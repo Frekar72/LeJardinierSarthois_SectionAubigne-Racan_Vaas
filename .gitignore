@@ -19,6 +19,7 @@ nul
 # ============================================
 .vscode/
 .idea/
+.claude/
 *.sublime-project
 *.sublime-workspace
 *.swp
