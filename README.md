@@ -64,7 +64,7 @@ le_jardinier_sarthois/
 
 ### Prérequis
 
-- **Python 3.12+** (pour l'optimisation d'images)
+- **Python 3.12+** (pour le serveur local et l'optimisation d'images)
 - **Pillow** : `pip install Pillow`
 - **Git** pour le versioning
 
@@ -77,19 +77,27 @@ cd LeJardinierSarthois_SectionAubigne-Racan_Vaas
 
 ### Visualiser le site en local
 
-Ouvrir simplement le fichier [src/index.html](src/index.html) dans votre navigateur.
+**Méthode recommandée : Serveur de développement automatique**
 
-**Ou utiliser un serveur local (recommandé) :**
+1. Double-cliquez sur [start-server.bat](start-server.bat)
+2. Le serveur démarre automatiquement sur http://localhost:8000
+3. Chrome s'ouvre automatiquement avec le site
+4. Les images et tous les fichiers sont correctement chargés
+
+**Raccourci Bureau (Windows)**
+
+Un raccourci "Serveur - Le Jardinier Sarthois.bat" a été créé sur le Bureau pour un accès rapide.
+
+**Alternative manuelle :**
 
 ```bash
 # Avec Python
 python -m http.server 8000
 
-# Avec Node.js (si installé)
-npx serve
-
-# Puis ouvrir : http://localhost:8000/src/
+# Puis ouvrir manuellement : http://localhost:8000
 ```
+
+**⚠️ Important** : Toujours tester avec un serveur local (pas en ouvrant directement le fichier HTML) pour que les chemins d'images fonctionnent correctement.
 
 ---
 
@@ -132,18 +140,26 @@ Le site est déployé automatiquement via GitHub Pages.
 
 **URL du site** : https://frekar72.github.io/LeJardinierSarthois_SectionAubigne-Racan_Vaas/
 
-### Processus de déploiement
+### Workflow de développement complet
 
 ```bash
-# 1. Faire vos modifications
-# 2. Tester en local
-# 3. Commit et push
+# 1. Tester en local AVANT de pousser
+#    Double-cliquer sur start-server.bat (ou le raccourci Bureau)
+#    Vérifier que tout fonctionne sur http://localhost:8000
+
+# 2. Faire vos modifications dans src/
+#    Modifier les fichiers dans src/index.html, src/css/, src/js/, etc.
+
+# 3. Commit et push (UNIQUEMENT après tests locaux réussis)
 git add .
 git commit -m "feat: description des changements"
 git push origin main
 
 # 4. GitHub Pages se met à jour automatiquement (1-2 min)
+#    Vérifier sur : https://frekar72.github.io/LeJardinierSarthois_SectionAubigne-Racan_Vaas/
 ```
+
+**⚠️ Règle d'or** : Ne JAMAIS pousser sur GitHub sans avoir testé en local d'abord !
 
 ### Configuration GitHub Pages
 
@@ -274,16 +290,29 @@ docs(readme): mettre à jour instructions
 
 ## 📊 Statut du projet
 
-**Version actuelle** : 0.1.0 (Phase 1 - Fondations)
+**Version actuelle** : 0.2.0 (Phase 3 - Environnement de développement)
 
 **Phase 1 : Fondations** ✅
 - ✅ Structure de dossiers
 - ✅ Documentation complète
 - ✅ Git initialisé
 - ✅ Landing page créée
-- ⏳ Déploiement GitHub Pages en cours
+- ✅ Optimisation des images (13 images, réduction ~85%)
 
-**Phase 2 : Pages principales** (À venir)
+**Phase 2 : Déploiement** ✅
+- ✅ Dépôt GitHub configuré
+- ✅ GitHub Pages déployé et fonctionnel
+- ✅ Correction des chemins pour production
+- ✅ Site accessible en ligne
+
+**Phase 3 : Environnement de développement** ✅
+- ✅ Serveur local Python HTTP configuré
+- ✅ Script de démarrage automatique (start-server.bat)
+- ✅ Ouverture automatique de Chrome avec le site
+- ✅ Raccourci Bureau pour accès rapide
+- ✅ Documentation du workflow local/production
+
+**Phase 4 : Pages principales** (À venir)
 - Page Actualités
 - Page Agenda
 - Page Galerie
