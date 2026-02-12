@@ -62,7 +62,7 @@
                 <div class="flex items-center space-x-3">
                     <img src="../../public/images/logo-jardinier-sarthois-gravure.png" alt="Logo Le Jardinier Sarthois" class="w-12 h-14 object-contain">
                     <div>
-                        <h1 class="text-2xl font-bold">Le Jardinier Sarthois</h1>
+                        <p class="text-2xl font-bold">Le Jardinier Sarthois</p>
                         <p class="text-sm text-jardin-beige">Aubigné-Racan • Vaas</p>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                     </svg>
                 </div>
-                <h2 class="text-4xl md:text-6xl font-bold mb-6">Calendrier des Semis</h2>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Calendrier des Semis</h1>
                 <p class="text-xl md:text-2xl text-jardin-beige mb-4">
                     Le Calendrier Lunaire de Michel Gros
                 </p>
@@ -218,42 +218,52 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-jardin-vert-dark text-white py-12 mt-16">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                <!-- À propos -->
+    <footer class="bg-jardin-vert text-white mt-16">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Colonne 1 : À propos -->
                 <div>
-                    <h4 class="text-xl font-bold mb-4 text-jardin-orange">Le Jardinier Sarthois</h4>
-                    <p class="text-gray-300">
-                        Section Aubigné-Racan / Vaas<br>
-                        Association de passionnés de jardinage dans la Sarthe
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <span class="text-2xl mr-2">🌱</span>
+                        Le Jardinier Sarthois
+                    </h3>
+                    <p class="text-jardin-beige text-sm">
+                        Association de jardinage de la section Aubigné-Racan / Vaas.
+                        Partage de connaissances et passion du jardinage.
                     </p>
                 </div>
 
-                <!-- Liens rapides -->
+                <!-- Colonne 2 : Navigation -->
                 <div>
-                    <h4 class="text-xl font-bold mb-4 text-jardin-orange">Liens rapides</h4>
-                    <ul class="space-y-2">
-                        <li><a href="../../index.html" class="text-gray-300 hover:text-jardin-orange transition-colors">Accueil</a></li>
-                        <li><a href="actualites.html" class="text-gray-300 hover:text-jardin-orange transition-colors">Actualités</a></li>
-                        <li><a href="agenda.html" class="text-gray-300 hover:text-jardin-orange transition-colors">Agenda</a></li>
-                        <li><a href="contact.html" class="text-gray-300 hover:text-jardin-orange transition-colors">Contact</a></li>
+                    <h3 class="text-xl font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../../index.html" class="text-jardin-beige hover:text-white transition">Accueil</a></li>
+                        <li><a href="a-propos.html" class="text-jardin-beige hover:text-white transition">À propos</a></li>
+                        <li><a href="actualites.html" class="text-jardin-beige hover:text-white transition">Actualités</a></li>
+                        <li><a href="agenda.html" class="text-jardin-beige hover:text-white transition">Agenda</a></li>
+                        <li><a href="galerie.html" class="text-jardin-beige hover:text-white transition">Galerie</a></li>
+                        <li><a href="tarifs.html" class="text-jardin-beige hover:text-white transition">Tarifs</a></li>
+                        <li><a href="calendrier-semis.html" class="text-white font-semibold">Calendrier des semis</a></li>
+                        <li><a href="contact.html" class="text-jardin-beige hover:text-white transition">Contact</a></li>
                     </ul>
                 </div>
 
-                <!-- Contact -->
+                <!-- Colonne 3 : Contact rapide -->
                 <div>
-                    <h4 class="text-xl font-bold mb-4 text-jardin-orange">Contact</h4>
-                    <ul class="space-y-2 text-sm text-gray-300">
-                        <li>📞 Claude Péan : <a href="tel:0644975136" class="hover:text-jardin-orange transition-colors">06 44 97 51 36</a></li>
-                        <li>📞 Monique Surut : <a href="tel:0677065965" class="hover:text-jardin-orange transition-colors">06 77 06 59 65</a></li>
+                    <h3 class="text-xl font-bold mb-4">Contact rapide</h3>
+                    <ul class="space-y-2 text-sm text-jardin-beige">
+                        <li>📧 <a href="mailto:contact@lejardiniersarthoisaubignevaas.fr" class="hover:text-white transition">contact@lejardiniersarthoisaubignevaas.fr</a></li>
+                        <li>📞 Claude Péan : <a href="tel:0644975136" class="hover:text-white transition">06 44 97 51 36</a></li>
+                        <li>📞 Monique Surut : <a href="tel:0677065965" class="hover:text-white transition">06 77 06 59 65</a></li>
                     </ul>
                 </div>
+
             </div>
 
             <!-- Copyright -->
-            <div class="border-t border-jardin-vert pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Le Jardinier Sarthois - Section Aubigné-Racan / Vaas</p>
+            <div class="border-t border-jardin-vert-light mt-8 pt-8 text-center text-sm text-jardin-beige">
+                <p>&copy; 2026 Le Jardinier Sarthois - Section Aubigné-Racan / Vaas. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
