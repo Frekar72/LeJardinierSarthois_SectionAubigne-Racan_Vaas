@@ -1,0 +1,31 @@
+========================================
+  DÉMARRER LE SERVEUR LOCAL
+========================================
+
+Pour tester votre site en local AVANT de pousser sur GitHub :
+
+1. Double-cliquez sur le fichier :
+   start-server.bat
+
+2. Attendez que la fenêtre s'ouvre
+
+3. Ouvrez votre navigateur et allez sur :
+   http://localhost:8000
+
+4. Pour arrêter le serveur :
+   Appuyez sur CTRL+C dans la fenêtre
+
+========================================
+  COPIER SUR LE BUREAU (optionnel)
+========================================
+
+Vous pouvez copier "start-server.bat" sur votre Bureau :
+
+1. Clic droit sur "start-server.bat"
+2. Copier
+3. Aller sur le Bureau
+4. Clic droit → Coller
+
+Vous pourrez ensuite double-cliquer dessus depuis le Bureau !
+
+========================================

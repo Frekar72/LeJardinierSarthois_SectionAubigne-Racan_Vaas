@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le Jardinier Sarthois - Association de jardinage à Aubigné-Racan et Vaas. Découvrez nos événements, ateliers et partagez notre passion pour le jardinage.">
+    <meta name="keywords" content="jardinage, sarthe, aubigné-racan, vaas, association, jardin, légumes, fleurs">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Le Jardinier Sarthois - Association de jardinage">
+    <meta property="og:description" content="Rejoignez notre communauté de passionnés de jardinage dans la Sarthe">
+    <meta property="og:image" content="../public/images/20251019_093153.jpg">
+    <meta property="og:type" content="website">
+
+    <title>Le Jardinier Sarthois - Association de jardinage à Aubigné-Racan et Vaas</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS compilé -->
+    <link rel="stylesheet" href="src/css/output.css">
+</head>
+<body class="font-sans antialiased bg-white" data-page="home">
+
+    <!-- Header / Navigation -->
+    <header class="bg-jardin-vert text-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo / Nom -->
+                <div class="flex items-center space-x-3">
+                    <img src="public/images/logo-jardinier-sarthois-gravure.png" alt="Logo Le Jardinier Sarthois" class="w-12 h-14 object-contain">
+                    <div>
+                        <h1 class="text-2xl font-bold">Le Jardinier Sarthois</h1>
+                        <p class="text-sm text-jardin-beige">Aubigné-Racan • Vaas</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Desktop -->
+                <ul class="hidden md:flex space-x-8 items-center">
+                    <li><a href="index.html" class="hover:text-jardin-orange transition-colors font-medium border-b-2 border-jardin-orange pb-1">Accueil</a></li>
+                    <li><a href="src/pages/a-propos.html" class="hover:text-jardin-orange transition-colors">À propos</a></li>
+                    <li><a href="src/pages/actualites.html" class="hover:text-jardin-orange transition-colors">Actualités</a></li>
+                    <li><a href="src/pages/agenda.html" class="hover:text-jardin-orange transition-colors">Agenda</a></li>
+                    <li><a href="src/pages/galerie.html" class="hover:text-jardin-orange transition-colors">Galerie</a></li>
+                    <li><a href="src/pages/tarifs.html" class="hover:text-jardin-orange transition-colors">Tarifs</a></li>
+                    <li><a href="src/pages/calendrier-semis.html" class="hover:text-jardin-orange transition-colors">Calendrier des semis</a></li>
+                    <li><a href="src/pages/contact.html" class="bg-jardin-orange hover:bg-jardin-orange-light px-6 py-2 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">Contact</a></li>
+                </ul>
+
+                <!-- Menu Burger Mobile -->
+                <button id="mobileMenuBtn" class="md:hidden text-white focus:outline-none" aria-label="Ouvrir le menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="index.html" class="block py-2 px-4 bg-jardin-vert-dark rounded hover:bg-jardin-orange transition-colors">Accueil</a></li>
+                    <li><a href="src/pages/a-propos.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">À propos</a></li>
+                    <li><a href="src/pages/actualites.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Actualités</a></li>
+                    <li><a href="src/pages/agenda.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Agenda</a></li>
+                    <li><a href="src/pages/galerie.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Galerie</a></li>
+                    <li><a href="src/pages/tarifs.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Tarifs</a></li>
+                    <li><a href="src/pages/calendrier-semis.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Calendrier des semis</a></li>
+                    <li><a href="src/pages/contact.html" class="block py-2 px-4 bg-jardin-orange rounded hover:bg-jardin-orange-light transition-colors font-semibold">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gradient-to-br from-jardin-vert to-jardin-vert-light overflow-hidden">
+        <!-- Image de fond avec overlay -->
+        <div class="absolute inset-0 z-0">
+            <img
+                src="public/images/20251019_095135.jpg"
+                alt="Stand du Jardinier Sarthois - Section Aubigné-Racan / Vaas"
+                class="w-full h-full object-cover opacity-60"
+                loading="eager"
+            >
+            <div class="absolute inset-0 bg-gradient-to-b from-jardin-vert/40 to-jardin-vert-dark/70"></div>
+        </div>
+
+        <!-- Contenu Hero -->
+        <div class="relative z-10 container mx-auto px-4 text-center text-white">
+            <h2 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+                Cultivons ensemble<br>
+                <span class="text-jardin-orange">la passion du jardinage</span>
+            </h2>
+            <p class="text-xl md:text-2xl mb-8 text-jardin-beige max-w-3xl mx-auto">
+                Rejoignez notre association de jardiniers passionnés à Aubigné-Racan et Vaas.
+                Partagez, apprenez et cultivez dans la convivialité.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="src/pages/contact.html" class="bg-jardin-orange hover:bg-jardin-orange-light text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all transform hover:scale-105">
+                    Nous rejoindre
+                </a>
+                <a href="src/pages/agenda.html" class="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white px-8 py-4 rounded-full font-bold text-lg transition-all">
+                    Voir les événements
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Section Présentation -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h3 class="text-4xl font-bold text-jardin-vert mb-6">Bienvenue au Jardinier Sarthois</h3>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Notre association rassemble des passionnés de jardinage dans la région d'Aubigné-Racan et Vaas.
+                    Que vous soyez débutant ou jardinier confirmé, vous trouverez chez nous un espace de partage,
+                    d'apprentissage et de convivialité autour de notre passion commune pour la terre et les plantes.
+                </p>
+            </div>
+
+            <!-- Cards Avantages -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-jardin-creme rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-jardin-vert rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-jardin-vert mb-4 text-center">Communauté</h4>
+                    <p class="text-gray-700 text-center">
+                        Rencontrez d'autres passionnés, échangez vos expériences et créez des liens durables.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-jardin-creme rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-jardin-orange rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-jardin-vert mb-4 text-center">Apprentissage</h4>
+                    <p class="text-gray-700 text-center">
+                        Participez à nos ateliers et formations pour développer vos compétences en jardinage.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-jardin-creme rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-jardin-violet rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-jardin-vert mb-4 text-center">Événements</h4>
+                    <p class="text-gray-700 text-center">
+                        Expositions, fêtes des légumes, trocs de plantes... Un calendrier riche toute l'année.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Galerie Aperçu -->
+    <section class="py-20 bg-jardin-beige">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-jardin-vert mb-4">Nos réalisations</h3>
+                <p class="text-lg text-gray-700">Découvrez quelques moments de notre association</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+                    <img src="public/images/20251019_093153.jpg" alt="Photo de groupe - Équipe du Jardinier Sarthois" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+                    <img src="public/images/20251019_092806.jpg" alt="Assortiment de légumes du jardin - Courges, poivrons, aubergines" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow">
+                    <img src="public/images/20251019_092743.jpg" alt="Exposition de légumes et fleurs d'automne" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="src/pages/galerie.html" class="inline-block bg-jardin-vert hover:bg-jardin-vert-light text-white px-8 py-3 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">
+                    Voir toute la galerie →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Prochains Événements -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h3 class="text-4xl font-bold text-jardin-vert mb-4">Prochains événements</h3>
+                <p class="text-lg text-gray-700">Ne manquez pas nos prochaines rencontres !</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-6">
+                <!-- Événement 1 -->
+                <div class="bg-jardin-creme rounded-xl p-6 shadow-md hover:shadow-lg transition-all flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4 flex flex-col items-center justify-center bg-jardin-vert text-white rounded-lg p-4">
+                        <span class="text-4xl font-bold">26</span>
+                        <span class="text-xl">AVR</span>
+                        <span class="text-sm">2026</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h4 class="text-2xl font-bold text-jardin-vert mb-2">Fête de la Terre</h4>
+                        <p class="text-gray-600 mb-3">
+                            <span class="inline-flex items-center mr-4">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Toute la journée
+                            </span>
+                            <span class="inline-flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Aubigné-Racan
+                            </span>
+                        </p>
+                        <p class="text-gray-700">
+                            La section d'Aubigné-Vaas sera présente lors de cet événement annuel célébrant la nature et le jardinage.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Événement 2 -->
+                <div class="bg-jardin-creme rounded-xl p-6 shadow-md hover:shadow-lg transition-all flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4 flex flex-col items-center justify-center bg-jardin-orange text-white rounded-lg p-4">
+                        <span class="text-4xl font-bold">07</span>
+                        <span class="text-xl">FÉV</span>
+                        <span class="text-sm">2026</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h4 class="text-2xl font-bold text-jardin-vert mb-2">Assemblée Générale</h4>
+                        <p class="text-gray-600 mb-3">
+                            <span class="inline-flex items-center mr-4">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                14h30
+                            </span>
+                            <span class="inline-flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Salle des fêtes, Vaas
+                            </span>
+                        </p>
+                        <p class="text-gray-700">
+                            Assemblée générale annuelle de l'association. Tous les membres sont invités à participer.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Événement 3 -->
+                <div class="bg-jardin-creme rounded-xl p-6 shadow-md hover:shadow-lg transition-all flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4 flex flex-col items-center justify-center bg-jardin-violet text-white rounded-lg p-4">
+                        <span class="text-4xl font-bold">FÉV-AVR</span>
+                        <span class="text-xl"></span>
+                        <span class="text-sm">2026</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h4 class="text-2xl font-bold text-jardin-vert mb-2">Lâchers de truite</h4>
+                        <p class="text-gray-600 mb-3">
+                            <span class="inline-flex items-center mr-4">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Février, Mars, Avril 2026
+                            </span>
+                            <span class="inline-flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Plan d'eau, Aubigné-Racan
+                            </span>
+                        </p>
+                        <p class="text-gray-700">
+                            La section d'Aubigné-Vaas sera présente lors des lâchers de truite organisés par la mairie d'Aubigné-Racan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="src/pages/agenda.html" class="inline-block bg-jardin-violet hover:bg-jardin-rose text-white px-8 py-3 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">
+                    Voir tout l'agenda →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CTA (Call to Action) -->
+    <section class="py-20 bg-gradient-to-r from-jardin-vert to-jardin-vert-light text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-6">Rejoignez notre communauté !</h3>
+            <p class="text-xl mb-8 max-w-2xl mx-auto text-jardin-beige">
+                Que vous soyez débutant ou expert, jeune ou moins jeune, venez partager votre passion du jardinage avec nous.
+            </p>
+            <a href="src/pages/contact.html" class="inline-block bg-jardin-orange hover:bg-jardin-orange-light text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all transform hover:scale-105">
+                Nous contacter
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-jardin-vert-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Colonne 1 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4 text-jardin-orange">Le Jardinier Sarthois</h4>
+                    <p class="text-jardin-beige text-sm">
+                        Association de jardinage<br>
+                        Aubigné-Racan • Vaas<br>
+                        Sarthe (72)
+                    </p>
+                </div>
+
+                <!-- Colonne 2 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-jardin-orange transition-colors">Accueil</a></li>
+                        <li><a href="src/pages/a-propos.html" class="hover:text-jardin-orange transition-colors">À propos</a></li>
+                        <li><a href="src/pages/actualites.html" class="hover:text-jardin-orange transition-colors">Actualités</a></li>
+                        <li><a href="src/pages/agenda.html" class="hover:text-jardin-orange transition-colors">Agenda</a></li>
+                        <li><a href="src/pages/galerie.html" class="hover:text-jardin-orange transition-colors">Galerie</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm text-jardin-beige">
+                        <li>📧 contact@jardinier-sarthois.fr</li>
+                        <li>📞 06 XX XX XX XX</li>
+                        <li>📍 Aubigné-Racan, 72800</li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 4 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-jardin-orange transition-colors" aria-label="Facebook">
+                            <span class="text-xl">f</span>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-jardin-orange transition-colors" aria-label="Instagram">
+                            <span class="text-xl">📷</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 pt-8 text-center text-sm text-jardin-beige">
+                <p>&copy; 2025 Le Jardinier Sarthois. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="src/js/main.js" defer></script>
+</body>
+</html>

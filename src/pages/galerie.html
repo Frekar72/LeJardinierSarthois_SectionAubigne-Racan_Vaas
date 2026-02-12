@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galerie photos de l'association Le Jardinier Sarthois - Section Aubigné-Racan / Vaas. Découvrez nos activités et réalisations.">
+    <meta name="keywords" content="galerie, photos, jardinier sarthois, aubigné-racan, vaas, association jardinage, sarthe">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Galerie - Le Jardinier Sarthois">
+    <meta property="og:description" content="Découvrez en images les activités de l'association Le Jardinier Sarthois">
+    <meta property="og:image" content="../../public/images/20251019_092743.jpg">
+    <meta property="og:url" content="https://frekar72.github.io/LeJardinierSarthois_SectionAubigne-Racan_Vaas/src/pages/galerie.html">
+
+    <title>Galerie - Le Jardinier Sarthois</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS compilé -->
+    <link href="../css/output.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-white">
+
+    <!-- Header / Navigation -->
+    <header class="bg-jardin-vert text-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo / Nom -->
+                <div class="flex items-center space-x-3">
+                    <img src="../../public/images/logo-jardinier-sarthois-gravure.png" alt="Logo Le Jardinier Sarthois" class="w-12 h-14 object-contain">
+                    <div>
+                        <h1 class="text-2xl font-bold">Le Jardinier Sarthois</h1>
+                        <p class="text-sm text-jardin-beige">Aubigné-Racan - Vaas</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Desktop -->
+                <ul class="hidden md:flex space-x-8 items-center">
+                    <li><a href="../../index.html" class="hover:text-jardin-orange transition-colors">Accueil</a></li>
+                    <li><a href="a-propos.html" class="hover:text-jardin-orange transition-colors">À propos</a></li>
+                    <li><a href="actualites.html" class="hover:text-jardin-orange transition-colors">Actualités</a></li>
+                    <li><a href="agenda.html" class="hover:text-jardin-orange transition-colors">Agenda</a></li>
+                    <li><a href="galerie.html" class="hover:text-jardin-orange transition-colors font-medium border-b-2 border-jardin-orange pb-1">Galerie</a></li>
+                    <li><a href="tarifs.html" class="hover:text-jardin-orange transition-colors">Tarifs</a></li>
+                    <li><a href="calendrier-semis.html" class="hover:text-jardin-orange transition-colors">Calendrier des semis</a></li>
+                    <li><a href="contact.html" class="bg-jardin-orange hover:bg-jardin-orange-light px-6 py-2 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">Contact</a></li>
+                </ul>
+
+                <!-- Menu Burger Mobile -->
+                <button id="mobileMenuBtn" class="md:hidden text-white focus:outline-none" aria-label="Ouvrir le menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="../../index.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Accueil</a></li>
+                    <li><a href="a-propos.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">À propos</a></li>
+                    <li><a href="actualites.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Actualités</a></li>
+                    <li><a href="agenda.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Agenda</a></li>
+                    <li><a href="galerie.html" class="block py-2 px-4 bg-jardin-vert-dark rounded transition-colors font-semibold">Galerie</a></li>
+                    <li><a href="tarifs.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Tarifs</a></li>
+                    <li><a href="calendrier-semis.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Calendrier des semis</a></li>
+                    <li><a href="contact.html" class="block py-2 px-4 bg-jardin-orange rounded hover:bg-jardin-orange-light transition-colors font-semibold">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-jardin-vert text-white py-16 md:py-24">
+        <div class="absolute inset-0 bg-jardin-vert"></div>
+
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Galerie</h1>
+            <p class="text-lg md:text-xl text-jardin-beige max-w-2xl mx-auto">
+                Découvrez en images nos activités et nos réalisations
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+
+        <!-- Section Galerie Photos -->
+        <section class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-jardin-vert text-center mb-8">
+                Nos Photos
+            </h2>
+
+            <!-- Filtres par catégorie -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12" id="filtres-container">
+                <button class="filter-btn active px-6 py-2 rounded-full font-semibold transition-all shadow-md hover:shadow-lg bg-jardin-vert text-white" data-filter="tous">
+                    Toutes
+                </button>
+                <!-- Les autres boutons seront générés dynamiquement -->
+            </div>
+
+            <!-- Compteur de photos -->
+            <p class="text-center text-gray-600 mb-8">
+                <span id="photos-count">0</span> photo(s)
+            </p>
+
+            <!-- Grille de photos (générée dynamiquement) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="galerie-grid">
+                <!-- Les photos seront chargées ici par JavaScript -->
+                <div class="col-span-full text-center py-12">
+                    <p class="text-gray-500">Chargement des photos...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section CTA -->
+        <section class="bg-gradient-to-r from-jardin-vert to-jardin-vert-light text-white rounded-2xl p-8 md:p-12 text-center shadow-xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Envie de nous rejoindre ?</h2>
+            <p class="text-xl text-jardin-beige mb-8 max-w-2xl mx-auto">
+                Rejoignez notre association et partagez votre passion du jardinage avec nous !
+            </p>
+            <a href="contact.html" class="inline-block bg-white text-jardin-vert font-semibold px-8 py-4 rounded-lg hover:bg-jardin-beige transition shadow-lg hover:shadow-xl transform hover:scale-105">
+                Nous contacter
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 bg-black/95 z-[100] hidden items-center justify-center p-4">
+        <!-- Bouton fermer -->
+        <button id="lightbox-close" class="absolute top-4 right-4 z-[110] text-white hover:text-jardin-orange transition-colors" aria-label="Fermer">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+
+        <!-- Bouton précédent -->
+        <button id="lightbox-prev" class="absolute left-4 top-1/2 -translate-y-1/2 z-[110] text-white hover:text-jardin-orange transition-colors bg-black/50 rounded-full p-3 hover:bg-black/70" aria-label="Image précédente">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+
+        <!-- Image container -->
+        <div class="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center">
+            <img id="lightbox-img" src="" alt="" class="max-w-full max-h-full object-contain rounded-lg shadow-2xl">
+        </div>
+
+        <!-- Bouton suivant -->
+        <button id="lightbox-next" class="absolute right-4 top-1/2 -translate-y-1/2 z-[110] text-white hover:text-jardin-orange transition-colors bg-black/50 rounded-full p-3 hover:bg-black/70" aria-label="Image suivante">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+
+        <!-- Caption -->
+        <div id="lightbox-caption" class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 text-white px-6 py-3 rounded-lg text-center max-w-2xl">
+            <p class="text-lg font-medium" id="lightbox-title"></p>
+            <p class="text-sm text-gray-300 mt-1" id="lightbox-description"></p>
+        </div>
+
+        <!-- Compteur -->
+        <div id="lightbox-counter" class="absolute top-4 left-4 bg-black/70 text-white px-4 py-2 rounded-lg text-sm">
+            <span id="current-index">1</span> / <span id="total-images">0</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-jardin-vert text-white mt-16">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Colonne 1 : À propos -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <span class="text-2xl mr-2">🌱</span>
+                        Le Jardinier Sarthois
+                    </h3>
+                    <p class="text-jardin-beige text-sm">
+                        Association de jardinage de la section Aubigné-Racan / Vaas.
+                        Partage de connaissances et passion du jardinage.
+                    </p>
+                </div>
+
+                <!-- Colonne 2 : Navigation -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../../index.html" class="text-jardin-beige hover:text-white transition">Accueil</a></li>
+                        <li><a href="a-propos.html" class="text-jardin-beige hover:text-white transition">À propos</a></li>
+                        <li><a href="actualites.html" class="text-jardin-beige hover:text-white transition">Actualités</a></li>
+                        <li><a href="agenda.html" class="text-jardin-beige hover:text-white transition">Agenda</a></li>
+                        <li><a href="galerie.html" class="text-white font-semibold">Galerie</a></li>
+                        <li><a href="contact.html" class="text-jardin-beige hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : Contact rapide -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact rapide</h3>
+                    <ul class="space-y-2 text-sm text-jardin-beige">
+                        <li>📞 Claude Péan : <a href="tel:0644975136" class="hover:text-white transition">06 44 97 51 36</a></li>
+                        <li>📞 Jean-Pierre Surut : <a href="tel:0677065965" class="hover:text-white transition">06 77 06 59 65</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-jardin-vert-light mt-8 pt-8 text-center text-sm text-jardin-beige">
+                <p>&copy; 2025 Le Jardinier Sarthois - Section Aubigné-Racan / Vaas. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/galerie.js"></script>
+
+</body>
+</html>

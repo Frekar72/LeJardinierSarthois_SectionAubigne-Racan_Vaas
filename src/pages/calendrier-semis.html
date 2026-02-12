@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Téléchargez le Calendrier des Semis du Calendrier Lunaire de Michel Gros - Le Jardinier Sarthois">
+    <meta name="keywords" content="calendrier semis, jardinage, lune, michel gros, jardinier sarthois, aubigné-racan, vaas">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Calendrier des Semis - Le Jardinier Sarthois">
+    <meta property="og:description" content="Téléchargez le Calendrier des Semis pour optimiser vos plantations">
+    <meta property="og:url" content="https://frekar72.github.io/LeJardinierSarthois_SectionAubigne-Racan_Vaas/src/pages/calendrier-semis.html">
+
+    <title>Calendrier des Semis - Le Jardinier Sarthois</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuration Tailwind personnalisée -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'jardin-vert': {
+                            light: '#4a7c2f',
+                            DEFAULT: '#2d5016',
+                            dark: '#1a300d',
+                        },
+                        'jardin-orange': {
+                            light: '#f59e0b',
+                            DEFAULT: '#ea580c',
+                        },
+                        'jardin-violet': '#a855f7',
+                        'jardin-rose': '#ec4899',
+                        'jardin-beige': '#fef3c7',
+                        'jardin-creme': '#fef5e7',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/custom.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-jardin-creme">
+
+    <!-- Header / Navigation -->
+    <header class="bg-jardin-vert text-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo / Nom -->
+                <div class="flex items-center space-x-3">
+                    <img src="../../public/images/logo-jardinier-sarthois-gravure.png" alt="Logo Le Jardinier Sarthois" class="w-12 h-14 object-contain">
+                    <div>
+                        <h1 class="text-2xl font-bold">Le Jardinier Sarthois</h1>
+                        <p class="text-sm text-jardin-beige">Aubigné-Racan • Vaas</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Desktop -->
+                <ul class="hidden md:flex space-x-8 items-center">
+                    <li><a href="../../index.html" class="hover:text-jardin-orange transition-colors">Accueil</a></li>
+                    <li><a href="a-propos.html" class="hover:text-jardin-orange transition-colors">À propos</a></li>
+                    <li><a href="actualites.html" class="hover:text-jardin-orange transition-colors">Actualités</a></li>
+                    <li><a href="agenda.html" class="hover:text-jardin-orange transition-colors">Agenda</a></li>
+                    <li><a href="galerie.html" class="hover:text-jardin-orange transition-colors">Galerie</a></li>
+                    <li><a href="tarifs.html" class="hover:text-jardin-orange transition-colors">Tarifs</a></li>
+                    <li><a href="calendrier-semis.html" class="hover:text-jardin-orange transition-colors font-medium border-b-2 border-jardin-orange pb-1">Calendrier des semis</a></li>
+                    <li><a href="contact.html" class="bg-jardin-orange hover:bg-jardin-orange-light px-6 py-2 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">Contact</a></li>
+                </ul>
+
+                <!-- Menu Burger Mobile -->
+                <button id="mobileMenuBtn" class="md:hidden text-white focus:outline-none" aria-label="Ouvrir le menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="../../index.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Accueil</a></li>
+                    <li><a href="a-propos.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">À propos</a></li>
+                    <li><a href="actualites.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Actualités</a></li>
+                    <li><a href="agenda.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Agenda</a></li>
+                    <li><a href="galerie.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Galerie</a></li>
+                    <li><a href="tarifs.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Tarifs</a></li>
+                    <li><a href="calendrier-semis.html" class="block py-2 px-4 bg-jardin-vert-dark rounded transition-colors font-semibold">Calendrier des semis</a></li>
+                    <li><a href="contact.html" class="block py-2 px-4 bg-jardin-orange rounded hover:bg-jardin-orange-light transition-colors font-semibold">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-jardin-vert to-jardin-vert-light text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block mb-6">
+                    <svg class="w-20 h-20 text-jardin-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-bold mb-6">Calendrier des Semis</h2>
+                <p class="text-xl md:text-2xl text-jardin-beige mb-4">
+                    Le Calendrier Lunaire de Michel Gros
+                </p>
+                <p class="text-lg text-white/90">
+                    Optimisez vos semis et plantations en suivant les phases de la lune
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenu Principal -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+
+                <!-- Description -->
+                <div class="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-8">
+                    <h3 class="text-3xl font-bold text-jardin-vert mb-6">Jardinez avec la lune</h3>
+                    <div class="prose prose-lg max-w-none text-gray-700 space-y-4">
+                        <p>
+                            Le calendrier lunaire est un outil précieux pour tous les jardiniers qui souhaitent optimiser leurs cultures.
+                            Depuis des siècles, les jardiniers observent les cycles lunaires pour déterminer les meilleurs moments pour semer, planter, tailler ou récolter.
+                        </p>
+                        <p>
+                            Ce calendrier des semis, élaboré par <strong>Michel Gros</strong>, vous guidera tout au long de l'année pour :
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>Semer vos légumes au bon moment</li>
+                            <li>Planter vos arbres et arbustes</li>
+                            <li>Effectuer vos travaux de jardinage</li>
+                            <li>Optimiser la croissance de vos plantes</li>
+                            <li>Respecter les rythmes naturels</li>
+                        </ul>
+                        <p>
+                            Que vous soyez jardinier débutant ou expérimenté, ce calendrier deviendra votre compagnon indispensable pour un jardin prospère et harmonieux.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bouton de téléchargement -->
+                <div class="bg-gradient-to-r from-jardin-vert to-jardin-vert-light rounded-xl shadow-2xl p-8 md:p-12 text-center text-white">
+                    <div class="mb-6">
+                        <svg class="w-24 h-24 mx-auto text-jardin-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-4">Téléchargez le calendrier</h3>
+                    <p class="text-xl mb-8 text-jardin-beige">
+                        Document PDF - Le Calendrier des Semis du Calendrier Lunaire de Michel Gros
+                    </p>
+                    <a href="/LeJardinierSarthois_SectionAubigne-Racan_Vaas/public/downloads/Le-Calendrier-des-Semis-du-Calendrier-Lunaire-de-Michel-Gros.pdf"
+                       download="Calendrier-des-Semis-Michel-Gros.pdf"
+                       target="_blank"
+                       class="inline-flex items-center gap-3 bg-jardin-orange hover:bg-jardin-orange-light text-white px-10 py-4 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-2xl hover:scale-105 transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                        </svg>
+                        Télécharger le PDF
+                    </a>
+                    <p class="text-sm mt-6 text-white/80">
+                        Fichier PDF - Gratuit pour tous les membres
+                    </p>
+                </div>
+
+                <!-- Conseils pratiques -->
+                <div class="mt-8 bg-white rounded-xl shadow-lg p-8 md:p-12">
+                    <h3 class="text-2xl font-bold text-jardin-vert mb-6 flex items-center gap-3">
+                        <svg class="w-8 h-8 text-jardin-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                        Conseils d'utilisation
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-jardin-creme rounded-lg p-6">
+                            <h4 class="font-semibold text-jardin-vert mb-3 text-lg">🌱 Jours favorables</h4>
+                            <p class="text-gray-700">
+                                Repérez les jours favorables pour chaque type de culture : racines, feuilles, fruits ou fleurs.
+                            </p>
+                        </div>
+                        <div class="bg-jardin-creme rounded-lg p-6">
+                            <h4 class="font-semibold text-jardin-vert mb-3 text-lg">🌙 Phases lunaires</h4>
+                            <p class="text-gray-700">
+                                Tenez compte de la lune montante (sève monte) et descendante (sève descend) pour vos travaux.
+                            </p>
+                        </div>
+                        <div class="bg-jardin-creme rounded-lg p-6">
+                            <h4 class="font-semibold text-jardin-vert mb-3 text-lg">📅 Planification</h4>
+                            <p class="text-gray-700">
+                                Planifiez vos semis à l'avance en consultant le calendrier régulièrement.
+                            </p>
+                        </div>
+                        <div class="bg-jardin-creme rounded-lg p-6">
+                            <h4 class="font-semibold text-jardin-vert mb-3 text-lg">☀️ Conditions locales</h4>
+                            <p class="text-gray-700">
+                                Adaptez toujours les conseils à votre climat et aux conditions météorologiques locales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-jardin-vert-dark text-white py-12 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- À propos -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4 text-jardin-orange">Le Jardinier Sarthois</h4>
+                    <p class="text-gray-300">
+                        Section Aubigné-Racan / Vaas<br>
+                        Association de passionnés de jardinage dans la Sarthe
+                    </p>
+                </div>
+
+                <!-- Liens rapides -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4 text-jardin-orange">Liens rapides</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../../index.html" class="text-gray-300 hover:text-jardin-orange transition-colors">Accueil</a></li>
+                        <li><a href="actualites.html" class="text-gray-300 hover:text-jardin-orange transition-colors">Actualités</a></li>
+                        <li><a href="agenda.html" class="text-gray-300 hover:text-jardin-orange transition-colors">Agenda</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-jardin-orange transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-xl font-bold mb-4 text-jardin-orange">Contact</h4>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>📞 Claude Péan : <a href="tel:0644975136" class="hover:text-jardin-orange transition-colors">06 44 97 51 36</a></li>
+                        <li>📞 Jean-Pierre Surut : <a href="tel:0677065965" class="hover:text-jardin-orange transition-colors">06 77 06 59 65</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-jardin-vert pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Le Jardinier Sarthois - Section Aubigné-Racan / Vaas</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

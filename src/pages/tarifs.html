@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tarifs et cotisations de l'association Le Jardinier Sarthois - Section Aubigné-Racan / Vaas.">
+    <meta name="keywords" content="tarifs, cotisation, adhésion, jardinier sarthois, aubigné-racan, vaas, association jardinage, sarthe">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tarifs - Le Jardinier Sarthois">
+    <meta property="og:description" content="Découvrez les tarifs et cotisations de l'association Le Jardinier Sarthois">
+    <meta property="og:image" content="../../public/images/20251019_092743.jpg">
+    <meta property="og:url" content="https://frekar72.github.io/LeJardinierSarthois_SectionAubigne-Racan_Vaas/src/pages/tarifs.html">
+
+    <title>Tarifs - Le Jardinier Sarthois</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuration Tailwind personnalisée -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'jardin-vert': {
+                            light: '#4a7c2f',
+                            DEFAULT: '#2d5016',
+                            dark: '#1a300d',
+                        },
+                        'jardin-orange': {
+                            light: '#f59e0b',
+                            DEFAULT: '#ea580c',
+                        },
+                        'jardin-violet': '#a855f7',
+                        'jardin-rose': '#ec4899',
+                        'jardin-beige': '#fef3c7',
+                        'jardin-creme': '#fef5e7',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/custom.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-white">
+
+    <!-- Header / Navigation -->
+    <header class="bg-jardin-vert text-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo / Nom -->
+                <div class="flex items-center space-x-3">
+                    <img src="../../public/images/logo-jardinier-sarthois-gravure.png" alt="Logo Le Jardinier Sarthois" class="w-12 h-14 object-contain">
+                    <div>
+                        <h1 class="text-2xl font-bold">Le Jardinier Sarthois</h1>
+                        <p class="text-sm text-jardin-beige">Aubigné-Racan • Vaas</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Desktop -->
+                <ul class="hidden md:flex space-x-8 items-center">
+                    <li><a href="../../index.html" class="hover:text-jardin-orange transition-colors">Accueil</a></li>
+                    <li><a href="a-propos.html" class="hover:text-jardin-orange transition-colors">À propos</a></li>
+                    <li><a href="actualites.html" class="hover:text-jardin-orange transition-colors">Actualités</a></li>
+                    <li><a href="agenda.html" class="hover:text-jardin-orange transition-colors">Agenda</a></li>
+                    <li><a href="galerie.html" class="hover:text-jardin-orange transition-colors">Galerie</a></li>
+                    <li><a href="tarifs.html" class="hover:text-jardin-orange transition-colors font-medium border-b-2 border-jardin-orange pb-1">Tarifs</a></li>
+                    <li><a href="calendrier-semis.html" class="hover:text-jardin-orange transition-colors">Calendrier des semis</a></li>
+                    <li><a href="contact.html" class="bg-jardin-orange hover:bg-jardin-orange-light px-6 py-2 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">Contact</a></li>
+                </ul>
+
+                <!-- Menu Burger Mobile -->
+                <button id="mobileMenuBtn" class="md:hidden text-white focus:outline-none" aria-label="Ouvrir le menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="../../index.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Accueil</a></li>
+                    <li><a href="a-propos.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">À propos</a></li>
+                    <li><a href="actualites.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Actualités</a></li>
+                    <li><a href="agenda.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Agenda</a></li>
+                    <li><a href="galerie.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Galerie</a></li>
+                    <li><a href="tarifs.html" class="block py-2 px-4 bg-jardin-vert-dark rounded transition-colors font-semibold">Tarifs</a></li>
+                    <li><a href="calendrier-semis.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Calendrier des semis</a></li>
+                    <li><a href="contact.html" class="block py-2 px-4 bg-jardin-orange rounded hover:bg-jardin-orange-light transition-colors font-semibold">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-jardin-vert text-white py-16 md:py-24">
+        <div class="absolute inset-0 bg-jardin-vert"></div>
+
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Tarifs</h1>
+            <p class="text-lg md:text-xl text-jardin-beige max-w-2xl mx-auto">
+                Découvrez nos tarifs et cotisations pour rejoindre l'association
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+
+        <!-- Section Avantages adhésion -->
+        <section class="max-w-4xl mx-auto">
+
+            <!-- Card Collection de graines -->
+            <div class="bg-jardin-creme rounded-2xl p-8 md:p-10 shadow-lg mb-8">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="bg-jardin-vert rounded-full p-3 flex-shrink-0">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-jardin-vert mb-3">Votre adhésion comprend</h2>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                            Lors de votre adhésion, il vous sera remis une <strong class="text-jardin-vert">collection de graines</strong> (14 variétés de légumes et 2 variétés de fleurs) adaptées à vos jardins et vous serez abonnés au <strong class="text-jardin-vert">journal trimestriel</strong> rédigé par les soins de notre fédération.
+                        </p>
+                        <a href="../../public/downloads/collection-graines-2026.pdf" target="_blank" class="inline-flex items-center gap-2 bg-jardin-vert hover:bg-jardin-vert-light text-white font-semibold px-5 py-2.5 rounded-lg transition shadow-md hover:shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            Voir la collection de graines 2026 (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Journal -->
+            <div class="bg-white border-2 border-jardin-vert/20 rounded-2xl p-8 md:p-10 shadow-lg mb-8">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="bg-jardin-orange rounded-full p-3 flex-shrink-0">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-jardin-vert mb-3">Le journal trimestriel</h2>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Ce journal comporte de nombreux <strong>conseils de jardinage</strong>, le calendrier des travaux pour chaque mois, des articles consacrés aux légumes, aux fleurs mais aussi aux petites bêtes qui habitent nos jardins, des conseils, des trucs et des astuces, le <strong>calendrier lunaire</strong>, les recettes de cuisine de Seb et Violaine, et vous connaîtrez la vie des sections.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Guide du jardinier -->
+            <div class="bg-jardin-creme rounded-2xl p-8 md:p-10 shadow-lg mb-8">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="bg-jardin-violet rounded-full p-3 flex-shrink-0">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-jardin-vert mb-3">Le guide du jardinier (nouveaux adhérents)</h2>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Aux nouveaux adhérents, il sera remis le <strong class="text-jardin-vert">guide du jardinier</strong> : ce guide sera votre ami, vous saurez comment bien débuter en jardinage et créer votre jardin, vous connaîtrez le bon voisinage des cultures, les auxiliaires et les ravageurs n'auront plus de secrets pour vous. Vous saurez comment préparer les purins, les décoctions, les macérations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Abonnement journal seul -->
+            <div class="bg-white border-2 border-jardin-orange/30 rounded-2xl p-8 md:p-10 shadow-lg mb-8">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="bg-jardin-orange-light rounded-full p-3 flex-shrink-0">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-jardin-vert mb-3">Abonnement au journal uniquement</h2>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            Nous vous proposons également un <strong>abonnement uniquement au journal</strong> avec une cotisation annuelle réduite.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card CTA Assemblée Générale -->
+            <div class="bg-gradient-to-r from-jardin-vert to-jardin-vert-light rounded-2xl p-8 md:p-10 shadow-xl text-white text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4">Rejoignez notre grande famille !</h2>
+                <p class="text-lg text-jardin-beige leading-relaxed mb-6 max-w-3xl mx-auto">
+                    Si vous aussi, vous souhaitez rejoindre cette grande famille que sont les jardiniers et participer aux différentes manifestations, nous serons heureux de vous accueillir lors de notre <strong class="text-white">assemblée générale</strong> qui aura lieu à la <strong class="text-white">salle des fêtes de Vaas le 7 février 2026 à partir de 14H30</strong>.
+                </p>
+                <p class="text-jardin-beige mb-8">
+                    Pour tout renseignement complémentaire, n'hésitez pas à nous contacter par téléphone ou via le formulaire de la page Contact.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="../../public/downloads/bulletin adhésion et d'abonnement 2026.pdf" target="_blank" class="inline-flex items-center justify-center gap-2 bg-white text-jardin-vert font-semibold px-8 py-4 rounded-lg transition shadow-lg hover:shadow-xl transform hover:scale-105 hover:bg-jardin-beige">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        Bulletin d'adhésion 2026 (PDF)
+                    </a>
+                    <a href="contact.html" class="inline-block bg-jardin-orange hover:bg-jardin-orange-light text-white font-semibold px-8 py-4 rounded-lg transition shadow-lg hover:shadow-xl transform hover:scale-105">
+                        Nous contacter
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-jardin-vert text-white mt-16">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Colonne 1 : À propos -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <span class="text-2xl mr-2">🌱</span>
+                        Le Jardinier Sarthois
+                    </h3>
+                    <p class="text-jardin-beige text-sm">
+                        Association de jardinage de la section Aubigné-Racan / Vaas.
+                        Partage de connaissances et passion du jardinage.
+                    </p>
+                </div>
+
+                <!-- Colonne 2 : Navigation -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../../index.html" class="text-jardin-beige hover:text-white transition">Accueil</a></li>
+                        <li><a href="a-propos.html" class="text-jardin-beige hover:text-white transition">À propos</a></li>
+                        <li><a href="actualites.html" class="text-jardin-beige hover:text-white transition">Actualités</a></li>
+                        <li><a href="agenda.html" class="text-jardin-beige hover:text-white transition">Agenda</a></li>
+                        <li><a href="galerie.html" class="text-jardin-beige hover:text-white transition">Galerie</a></li>
+                        <li><a href="tarifs.html" class="text-white font-semibold">Tarifs</a></li>
+                        <li><a href="contact.html" class="text-jardin-beige hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : Contact rapide -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact rapide</h3>
+                    <ul class="space-y-2 text-sm text-jardin-beige">
+                        <li>📞 Claude Péan : <a href="tel:0644975136" class="hover:text-white transition">06 44 97 51 36</a></li>
+                        <li>📞 Jean-Pierre Surut : <a href="tel:0677065965" class="hover:text-white transition">06 77 06 59 65</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-jardin-vert-light mt-8 pt-8 text-center text-sm text-jardin-beige">
+                <p>&copy; 2025 Le Jardinier Sarthois - Section Aubigné-Racan / Vaas. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script>
+        // Menu mobile toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn?.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

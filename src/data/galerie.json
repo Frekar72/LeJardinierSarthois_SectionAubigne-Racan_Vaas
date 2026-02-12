@@ -1,0 +1,82 @@
+{
+  "categories": [
+    {
+      "id": "fete-pomme-2025",
+      "nom": "Fête de la Pomme 2025",
+      "description": "Notre participation à la Fête de la Pomme d'Aubigné-Racan"
+    },
+    {
+      "id": "recoltes",
+      "nom": "Récoltes",
+      "description": "Les fruits et légumes de nos jardins"
+    },
+    {
+      "id": "equipe",
+      "nom": "Notre équipe",
+      "description": "Les membres de l'association en action"
+    },
+    {
+      "id": "plante-ta-graine",
+      "nom": "Plante ta graine à la cantine",
+      "description": "Notre action pédagogique auprès des enfants"
+    }
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "src": "20251019_092743.jpg",
+      "titre": "Exposition légumes d'automne",
+      "description": "Assortiment de légumes présentés lors de la Fête de la Pomme 2025",
+      "categorie": "fete-pomme-2025",
+      "date": "2025-10-19"
+    },
+    {
+      "id": 3,
+      "src": "20251019_092806.jpg",
+      "titre": "Légumes variés",
+      "description": "Courges, poivrons, aubergines et autres légumes du jardin",
+      "categorie": "recoltes",
+      "date": "2025-10-19"
+    },
+    {
+      "id": 4,
+      "src": "20251019_092825.jpg",
+      "titre": "Stand de légumes",
+      "description": "Présentation de nos productions sur le stand",
+      "categorie": "fete-pomme-2025",
+      "date": "2025-10-19"
+    },
+    {
+      "id": 5,
+      "src": "20251019_093153.jpg",
+      "titre": "Notre équipe",
+      "description": "L'équipe du Jardinier Sarthois lors de la Fête de la Pomme 2025",
+      "categorie": "equipe",
+      "date": "2025-10-19"
+    },
+    {
+      "id": 8,
+      "src": "20251019_095135.jpg",
+      "titre": "Notre stand",
+      "description": "Vue d'ensemble du stand Le Jardinier Sarthois",
+      "categorie": "fete-pomme-2025",
+      "date": "2025-10-19"
+    },
+    {
+      "id": 9,
+      "src": "20250604_123915.jpg",
+      "titre": "Atelier jardinage à la cantine",
+      "description": "Les enfants découvrent le jardinage",
+      "categorie": "plante-ta-graine",
+      "date": "2025-06-04"
+    },
+    {
+      "id": 10,
+      "src": "20250717_103630.jpg",
+      "titre": "Récolte avec les enfants",
+      "description": "Les fruits du travail des petits jardiniers",
+      "categorie": "plante-ta-graine",
+      "date": "2025-07-17"
+    }
+  ]
+}

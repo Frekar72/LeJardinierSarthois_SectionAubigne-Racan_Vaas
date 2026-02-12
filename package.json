@@ -1,0 +1,20 @@
+{
+  "name": "le-jardinier-sarthois",
+  "version": "1.0.0",
+  "description": "Site web de l'association Le Jardinier Sarthois",
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css",
+    "watch:css": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch",
+    "dev": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch"
+  },
+  "keywords": [
+    "jardinage",
+    "association",
+    "sarthe"
+  ],
+  "author": "Le Jardinier Sarthois",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^4.1.18"
+  }
+}

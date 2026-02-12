@@ -1,0 +1,106 @@
+# Le Jardinier Sarthois - .gitignore
+
+# ============================================
+# Fichiers système
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+nul
+*.tmp
+
+# ============================================
+# Éditeurs & IDEs
+# ============================================
+.vscode/
+.idea/
+.claude/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# ============================================
+# Dépendances (si utilisation de npm)
+# ============================================
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+.pnp/
+.pnp.js
+
+# ============================================
+# Build / Distribution
+# ============================================
+dist/
+build/
+.cache/
+.parcel-cache/
+out/
+
+# ============================================
+# Documents métier (ne pas versionner)
+# ============================================
+Documents/
+*.pdf
+*.docx
+*.xlsx
+!public/downloads/*.pdf
+
+# ============================================
+# Images originales (backups)
+# ============================================
+public/images/originals/
+
+# ============================================
+# Logs
+# ============================================
+*.log
+logs/
+*.log.*
+
+# ============================================
+# Environnement
+# ============================================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# ============================================
+# Python (scripts utilitaires)
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# ============================================
+# Fichiers temporaires
+# ============================================
+*.bak
+*.cache
+*.temp
+.sass-cache/
+
+# ============================================
+# Autres
+# ============================================
+.vercel
+.netlify
