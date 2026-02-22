@@ -19,6 +19,11 @@
       "id": "plante-ta-graine",
       "nom": "Plante ta graine à la cantine",
       "description": "Notre action pédagogique auprès des enfants"
+    },
+    {
+      "id": "journees-peche",
+      "nom": "Journées pêche",
+      "description": "Lâchers de truite au plan d'eau d'Aubigné-Racan"
     }
   ],
   "photos": [
@@ -77,6 +82,14 @@
       "description": "Les fruits du travail des petits jardiniers",
       "categorie": "plante-ta-graine",
       "date": "2025-07-17"
+    },
+    {
+      "id": 11,
+      "src": "20260221_091935.jpg",
+      "titre": "Lâcher de truites - 21 février 2026",
+      "description": "Journée pêche au plan d'eau d'Aubigné-Racan",
+      "categorie": "journees-peche",
+      "date": "2026-02-21"
     }
   ]
 }
