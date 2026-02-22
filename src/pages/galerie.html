@@ -19,8 +19,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS compilé -->
-    <link href="../css/output.css" rel="stylesheet">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuration Tailwind personnalisée -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'jardin-vert': {
+                            light: '#4a7c2f',
+                            DEFAULT: '#2d5016',
+                            dark: '#1a300d',
+                        },
+                        'jardin-orange': {
+                            light: '#f59e0b',
+                            DEFAULT: '#ea580c',
+                        },
+                        'jardin-violet': '#a855f7',
+                        'jardin-rose': '#ec4899',
+                        'jardin-beige': '#fef3c7',
+                        'jardin-creme': '#fef5e7',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link href="../css/custom.css" rel="stylesheet">
 </head>
 <body class="font-sans antialiased bg-white">
 
