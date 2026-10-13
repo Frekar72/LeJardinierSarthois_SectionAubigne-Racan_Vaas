@@ -330,7 +330,7 @@
                 </p>
 
                 <!-- Carte -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden relative z-0">
                     <div id="carte-sections" class="h-96 md:h-[500px] w-full"></div>
                 </div>
 
@@ -515,14 +515,16 @@
         // Initialisation de la carte
         const map = L.map('carte-sections').setView([47.95, 0.2], 9);
 
-        // Fond de carte OpenStreetMap
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        // Fond de carte Plan IGN (Géoportail) : gratuit, sans clé, ne dépend pas du referer
+        // (les tuiles OpenStreetMap affichaient « Access blocked » quand le navigateur n'envoie pas de referer)
+        L.tileLayer('https://data.geopf.fr/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2&STYLE=normal&TILEMATRIXSET=PM&FORMAT=image/png&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.ign.fr/">IGN</a> – <a href="https://www.geoportail.gouv.fr/">Géoportail</a>'
         }).addTo(map);
 
         // Icône verte par défaut
         const greenIcon = L.icon({
-            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+            iconUrl: 'https://cdn.jsdelivr.net/gh/pointhi/leaflet-color-markers@master/img/marker-icon-2x-green.png',
             shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
             iconSize: [25, 41],
             iconAnchor: [12, 41],
@@ -532,7 +534,7 @@
 
         // Icône orange pour notre section
         const orangeIcon = L.icon({
-            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png',
+            iconUrl: 'https://cdn.jsdelivr.net/gh/pointhi/leaflet-color-markers@master/img/marker-icon-2x-orange.png',
             shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
             iconSize: [25, 41],
             iconAnchor: [12, 41],
