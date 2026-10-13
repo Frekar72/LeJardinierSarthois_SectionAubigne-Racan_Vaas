@@ -1,9 +1,49 @@
 {
   "categories": [
     {
+      "id": "brocante-rotrou",
+      "nom": "Brocante du Moulin de Rotrou",
+      "description": "Notre stand à la brocante du Moulin de Rotrou"
+    },
+    {
+      "id": "fete-terre-2026",
+      "nom": "Fête de la Terre 2026",
+      "description": "Notre stand fleuri à la Fête de la Terre d'Aubigné-Racan"
+    },
+    {
+      "id": "journees-peche",
+      "nom": "Journées pêche",
+      "description": "Lâchers de truite au plan d'eau d'Aubigné-Racan"
+    },
+    {
+      "id": "graines",
+      "nom": "Collection graines",
+      "description": "Les graines proposées aux adhérents"
+    },
+    {
+      "id": "reunion-secteur",
+      "nom": "Réunion secteur Sud-Sarthe",
+      "description": "Réunion du secteur Sud-Sarthe du Jardinier Sarthois"
+    },
+    {
+      "id": "jardins-pedagogiques",
+      "nom": "Jardins pédagogiques",
+      "description": "Les jardins pédagogiques du Moulin de Rotrou et de l'école de Vaas"
+    },
+    {
+      "id": "assemblees-2026",
+      "nom": "Assemblées générales 2026",
+      "description": "Assemblée générale et assemblée générale extraordinaire de la section"
+    },
+    {
       "id": "fete-pomme-2025",
       "nom": "Fête de la Pomme 2025",
       "description": "Notre participation à la Fête de la Pomme d'Aubigné-Racan"
+    },
+    {
+      "id": "plante-ta-graine",
+      "nom": "Plante ta graine à la cantine",
+      "description": "Notre action pédagogique auprès des enfants"
     },
     {
       "id": "recoltes",
@@ -14,19 +54,265 @@
       "id": "equipe",
       "nom": "Notre équipe",
       "description": "Les membres de l'association en action"
-    },
-    {
-      "id": "plante-ta-graine",
-      "nom": "Plante ta graine à la cantine",
-      "description": "Notre action pédagogique auprès des enfants"
-    },
-    {
-      "id": "journees-peche",
-      "nom": "Journées pêche",
-      "description": "Lâchers de truite au plan d'eau d'Aubigné-Racan"
     }
   ],
   "photos": [
+    {
+      "id": 35,
+      "src": "galerie/20260512_153951.jpg",
+      "titre": "Les parcelles",
+      "description": "Les parcelles du jardin pédagogique",
+      "categorie": "jardins-pedagogiques",
+      "date": "2026-05-12"
+    },
+    {
+      "id": 12,
+      "src": "galerie/20260510_091946.jpg",
+      "titre": "Notre stand à la brocante",
+      "description": "Le stand du Jardinier Sarthois à la brocante du Moulin de Rotrou",
+      "categorie": "brocante-rotrou",
+      "date": "2026-05-10"
+    },
+    {
+      "id": 13,
+      "src": "galerie/20260510_113425.jpg",
+      "titre": "Brocante du Moulin de Rotrou",
+      "description": "Accueil des visiteurs sur notre stand",
+      "categorie": "brocante-rotrou",
+      "date": "2026-05-10"
+    },
+    {
+      "id": 14,
+      "src": "galerie/20260426_095721.jpg",
+      "titre": "Fête de la Terre 2026",
+      "description": "Notre stand fleuri sous l'auvent",
+      "categorie": "fete-terre-2026",
+      "date": "2026-04-26"
+    },
+    {
+      "id": 15,
+      "src": "galerie/20260426_095728.jpg",
+      "titre": "Stand fleuri",
+      "description": "Fleurs et décorations sur notre stand",
+      "categorie": "fete-terre-2026",
+      "date": "2026-04-26"
+    },
+    {
+      "id": 16,
+      "src": "galerie/20260426_095801.jpg",
+      "titre": "Vue du stand",
+      "description": "Le stand du Jardinier Sarthois à la Fête de la Terre",
+      "categorie": "fete-terre-2026",
+      "date": "2026-04-26"
+    },
+    {
+      "id": 17,
+      "src": "galerie/20260426_095805.jpg",
+      "titre": "« Le Jardinier Sarthois vous redonne du pouvoir d'achat »",
+      "description": "Le panneau de présentation de l'adhésion",
+      "categorie": "fete-terre-2026",
+      "date": "2026-04-26"
+    },
+    {
+      "id": 18,
+      "src": "galerie/20260426_095821.jpg",
+      "titre": "Bouquets de saison",
+      "description": "Les fleurs exposées sur notre stand",
+      "categorie": "fete-terre-2026",
+      "date": "2026-04-26"
+    },
+    {
+      "id": 19,
+      "src": "galerie/20260425_115754.jpg",
+      "titre": "Journée pêche du 25 avril",
+      "description": "Rencontres sous le barnum au plan d'eau",
+      "categorie": "journees-peche",
+      "date": "2026-04-25"
+    },
+    {
+      "id": 20,
+      "src": "galerie/20260425_115816.jpg",
+      "titre": "Sous le barnum",
+      "description": "Les bénévoles de la section à la journée pêche",
+      "categorie": "journees-peche",
+      "date": "2026-04-25"
+    },
+    {
+      "id": 21,
+      "src": "galerie/20260425_115851.jpg",
+      "titre": "Au bord de l'eau",
+      "description": "Lâcher de truites au plan d'eau d'Aubigné-Racan",
+      "categorie": "journees-peche",
+      "date": "2026-04-25"
+    },
+    {
+      "id": 22,
+      "src": "galerie/20260425_120154.jpg",
+      "titre": "Le plan d'eau",
+      "description": "Pêcheurs au plan d'eau d'Aubigné-Racan",
+      "categorie": "journees-peche",
+      "date": "2026-04-25"
+    },
+    {
+      "id": 23,
+      "src": "galerie/20260425_120315.jpg",
+      "titre": "Convivialité",
+      "description": "Moment d'échange sous le barnum",
+      "categorie": "journees-peche",
+      "date": "2026-04-25"
+    },
+    {
+      "id": 24,
+      "src": "galerie/20260425_150525.jpg",
+      "titre": "Le repas",
+      "description": "Repas partagé après la journée pêche",
+      "categorie": "journees-peche",
+      "date": "2026-04-25"
+    },
+    {
+      "id": 25,
+      "src": "galerie/20260423_135624.jpg",
+      "titre": "Le pouvoir d'achat du jardinier",
+      "description": "24 variétés de légumes, 2 de fleurs, 4 magazines par an et un guide offert",
+      "categorie": "graines",
+      "date": "2026-04-23"
+    },
+    {
+      "id": 26,
+      "src": "galerie/IMG-20260421-WA0000.jpg",
+      "titre": "Collection graines 2026",
+      "description": "Les sachets de graines proposés aux adhérents",
+      "categorie": "graines",
+      "date": "2026-04-21"
+    },
+    {
+      "id": 27,
+      "src": "galerie/20260415_180047.jpg",
+      "titre": "Réunion secteur Sud-Sarthe",
+      "description": "Réunion du secteur Sud-Sarthe du Jardinier Sarthois",
+      "categorie": "reunion-secteur",
+      "date": "2026-04-15"
+    },
+    {
+      "id": 28,
+      "src": "galerie/20260415_180159.jpg",
+      "titre": "Réunion secteur Sud-Sarthe",
+      "description": "Les participants à la réunion du secteur",
+      "categorie": "reunion-secteur",
+      "date": "2026-04-15"
+    },
+    {
+      "id": 29,
+      "src": "galerie/20260328_082026.jpg",
+      "titre": "Lâcher de truites - 28 mars",
+      "description": "Journée pêche au plan d'eau d'Aubigné-Racan",
+      "categorie": "journees-peche",
+      "date": "2026-03-28"
+    },
+    {
+      "id": 30,
+      "src": "galerie/20260328_083921.jpg",
+      "titre": "Le plan d'eau au petit matin",
+      "description": "Plan d'eau d'Aubigné-Racan",
+      "categorie": "journees-peche",
+      "date": "2026-03-28"
+    },
+    {
+      "id": 31,
+      "src": "galerie/20260328_084022.jpg",
+      "titre": "Les pêcheurs",
+      "description": "Journée pêche du 28 mars",
+      "categorie": "journees-peche",
+      "date": "2026-03-28"
+    },
+    {
+      "id": 32,
+      "src": "galerie/20260328_084353.jpg",
+      "titre": "Belle prise !",
+      "description": "Une truite pêchée au plan d'eau",
+      "categorie": "journees-peche",
+      "date": "2026-03-28"
+    },
+    {
+      "id": 33,
+      "src": "galerie/20260328_084727.jpg",
+      "titre": "Aux fourneaux",
+      "description": "Un bénévole de la section en tablier sous le barnum",
+      "categorie": "journees-peche",
+      "date": "2026-03-28"
+    },
+    {
+      "id": 34,
+      "src": "galerie/20260328_084751.jpg",
+      "titre": "Sous le barnum",
+      "description": "Accueil des pêcheurs",
+      "categorie": "journees-peche",
+      "date": "2026-03-28"
+    },
+    {
+      "id": 36,
+      "src": "galerie/20260225_100423.jpg",
+      "titre": "Jardins pédagogiques",
+      "description": "Moulin de Rotrou & École de Vaas",
+      "categorie": "jardins-pedagogiques",
+      "date": "2026-02-25"
+    },
+    {
+      "id": 37,
+      "src": "galerie/20260225_100513.jpg",
+      "titre": "Le dôme",
+      "description": "Le dôme des jardins pédagogiques",
+      "categorie": "jardins-pedagogiques",
+      "date": "2026-02-25"
+    },
+    {
+      "id": 38,
+      "src": "galerie/20260225_161445.jpg",
+      "titre": "Une jardinière de la section",
+      "description": "En tablier du Jardinier Sarthois",
+      "categorie": "equipe",
+      "date": "2026-02-25"
+    },
+    {
+      "id": 11,
+      "src": "20260221_091935.jpg",
+      "titre": "Lâcher de truites - 21 février 2026",
+      "description": "Journée pêche au plan d'eau d'Aubigné-Racan",
+      "categorie": "journees-peche",
+      "date": "2026-02-21"
+    },
+    {
+      "id": 39,
+      "src": "galerie/20260207_152406.jpg",
+      "titre": "Assemblée générale extraordinaire",
+      "description": "Les adhérents réunis le 7 février",
+      "categorie": "assemblees-2026",
+      "date": "2026-02-07"
+    },
+    {
+      "id": 40,
+      "src": "galerie/20260207_152459.jpg",
+      "titre": "Assemblée générale extraordinaire",
+      "description": "La tribune de la section",
+      "categorie": "assemblees-2026",
+      "date": "2026-02-07"
+    },
+    {
+      "id": 41,
+      "src": "galerie/20260206_094805.jpg",
+      "titre": "Assemblée générale de la section",
+      "description": "Accueil des adhérents",
+      "categorie": "assemblees-2026",
+      "date": "2026-02-06"
+    },
+    {
+      "id": 42,
+      "src": "galerie/20260206_100548.jpg",
+      "titre": "Assemblée générale de la section",
+      "description": "Une salle comble pour notre AG",
+      "categorie": "assemblees-2026",
+      "date": "2026-02-06"
+    },
     {
       "id": 1,
       "src": "20251019_092743.jpg",
@@ -68,14 +354,6 @@
       "date": "2025-10-19"
     },
     {
-      "id": 9,
-      "src": "20250604_123915.jpg",
-      "titre": "Atelier jardinage à la cantine",
-      "description": "Les enfants découvrent le jardinage",
-      "categorie": "plante-ta-graine",
-      "date": "2025-06-04"
-    },
-    {
       "id": 10,
       "src": "20250717_103630.jpg",
       "titre": "Récolte avec les enfants",
@@ -84,12 +362,12 @@
       "date": "2025-07-17"
     },
     {
-      "id": 11,
-      "src": "20260221_091935.jpg",
-      "titre": "Lâcher de truites - 21 février 2026",
-      "description": "Journée pêche au plan d'eau d'Aubigné-Racan",
-      "categorie": "journees-peche",
-      "date": "2026-02-21"
+      "id": 9,
+      "src": "20250604_123915.jpg",
+      "titre": "Atelier jardinage à la cantine",
+      "description": "Les enfants découvrent le jardinage",
+      "categorie": "plante-ta-graine",
+      "date": "2025-06-04"
     }
   ]
 }

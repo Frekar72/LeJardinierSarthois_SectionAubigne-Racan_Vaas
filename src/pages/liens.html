@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liens utiles - Le Jardinier Sarthois, section Aubigné-Racan / Vaas : communes, gestion des déchets et compostage, réseaux sociaux.">
+    <meta name="keywords" content="liens utiles, jardinier sarthois, aubigné-racan, vaas, compostage, sarthe">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Liens utiles - Le Jardinier Sarthois">
+    <meta property="og:description" content="Les sites utiles pour les jardiniers d'Aubigné-Racan et de Vaas">
+    <meta property="og:url" content="https://frekar72.github.io/LeJardinierSarthois_SectionAubigne-Racan_Vaas/src/pages/liens.html">
+
+    <title>Liens utiles - Le Jardinier Sarthois</title>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuration Tailwind personnalisée -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'jardin-vert': {
+                            light: '#4a7c2f',
+                            DEFAULT: '#2d5016',
+                            dark: '#1a300d',
+                        },
+                        'jardin-orange': {
+                            light: '#f59e0b',
+                            DEFAULT: '#ea580c',
+                        },
+                        'jardin-violet': '#a855f7',
+                        'jardin-rose': '#ec4899',
+                        'jardin-beige': '#fef3c7',
+                        'jardin-creme': '#fef5e7',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/custom.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased bg-jardin-creme">
+
+    <!-- Header / Navigation -->
+    <header class="bg-jardin-vert text-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo / Nom -->
+                <a href="../../index.html" class="flex items-center space-x-3 hover:opacity-90 transition-opacity">
+                    <img src="../../public/images/logo-jardinier-sarthois-gravure.png" alt="Logo Le Jardinier Sarthois" class="w-12 h-14 object-contain">
+                    <div>
+                        <p class="text-2xl font-bold">Le Jardinier Sarthois</p>
+                        <p class="text-sm text-jardin-beige">Aubigné-Racan • Vaas</p>
+                    </div>
+                </a>
+
+                <!-- Navigation Desktop -->
+                <ul class="hidden xl:flex space-x-6 items-center whitespace-nowrap">
+                    <li><a href="../../index.html" class="hover:text-jardin-orange transition-colors">Accueil</a></li>
+                    <li><a href="a-propos.html" class="hover:text-jardin-orange transition-colors">À propos</a></li>
+                    <li><a href="actualites.html" class="hover:text-jardin-orange transition-colors">Actualités</a></li>
+                    <li><a href="agenda.html" class="hover:text-jardin-orange transition-colors">Agenda</a></li>
+                    <li><a href="galerie.html" class="hover:text-jardin-orange transition-colors">Galerie</a></li>
+                    <li><a href="tarifs.html" class="hover:text-jardin-orange transition-colors">Tarifs</a></li>
+                    <li><a href="calendrier-semis.html" class="hover:text-jardin-orange transition-colors">Calendrier des semis</a></li>
+                    <li><a href="liens.html" class="hover:text-jardin-orange transition-colors font-medium border-b-2 border-jardin-orange pb-1">Liens utiles</a></li>
+                    <li><a href="contact.html" class="bg-jardin-orange hover:bg-jardin-orange-light px-6 py-2 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">Contact</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61587806053490" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all" style="background-color: #1877F2;" title="Suivez-nous sur Facebook" aria-label="Suivez-nous sur Facebook (nouvelle fenêtre)"><span class="text-xl font-bold">f</span></a></li>
+                </ul>
+
+                <!-- Menu Burger Mobile -->
+                <button id="mobileMenuBtn" class="xl:hidden text-white focus:outline-none" aria-label="Ouvrir le menu">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div id="mobileMenu" class="hidden xl:hidden mt-4 pb-4">
+                <ul class="flex flex-col space-y-3">
+                    <li><a href="../../index.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Accueil</a></li>
+                    <li><a href="a-propos.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">À propos</a></li>
+                    <li><a href="actualites.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Actualités</a></li>
+                    <li><a href="agenda.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Agenda</a></li>
+                    <li><a href="galerie.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Galerie</a></li>
+                    <li><a href="tarifs.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Tarifs</a></li>
+                    <li><a href="calendrier-semis.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Calendrier des semis</a></li>
+                    <li><a href="liens.html" class="block py-2 px-4 bg-jardin-vert-dark rounded transition-colors font-semibold">Liens utiles</a></li>
+                    <li><a href="contact.html" class="block py-2 px-4 bg-jardin-orange rounded hover:bg-jardin-orange-light transition-colors font-semibold">Contact</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61587806053490" target="_blank" rel="noopener noreferrer" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Suivez-nous sur Facebook</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-jardin-vert to-jardin-vert-light text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Liens utiles</h1>
+                <p class="text-xl md:text-2xl text-jardin-beige">
+                    Les sites qui peuvent intéresser les jardiniers d'Aubigné-Racan et de Vaas
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenu Principal -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="https://www.facebook.com/profile.php?id=61587806053490" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-6 flex items-start gap-4 border-t-4 border-jardin-vert">
+                        <span class="text-4xl flex-shrink-0">📘</span>
+                        <span class="flex-1 min-w-0">
+                            <span class="block text-xl font-bold text-jardin-vert group-hover:text-jardin-orange transition-colors">Notre page Facebook</span>
+                            <span class="block text-gray-700 mt-1">Les actualités et photos de la section Aubigné-Racan / Vaas.</span>
+                            <span class="block text-sm text-jardin-orange mt-2 break-all">facebook.com ↗</span>
+                        </span>
+                    </a>
+                    <a href="https://www.aubigne-racan.com/" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-6 flex items-start gap-4 border-t-4 border-jardin-vert">
+                        <span class="text-4xl flex-shrink-0">🏛️</span>
+                        <span class="flex-1 min-w-0">
+                            <span class="block text-xl font-bold text-jardin-vert group-hover:text-jardin-orange transition-colors">Mairie d'Aubigné-Racan</span>
+                            <span class="block text-gray-700 mt-1">Le site officiel de la commune d'Aubigné-Racan.</span>
+                            <span class="block text-sm text-jardin-orange mt-2 break-all">aubigne-racan.com ↗</span>
+                        </span>
+                    </a>
+                    <a href="https://www.vaas.fr/" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-6 flex items-start gap-4 border-t-4 border-jardin-vert">
+                        <span class="text-4xl flex-shrink-0">🏛️</span>
+                        <span class="flex-1 min-w-0">
+                            <span class="block text-xl font-bold text-jardin-vert group-hover:text-jardin-orange transition-colors">Commune de Vaas</span>
+                            <span class="block text-gray-700 mt-1">Le site officiel de la commune de Vaas.</span>
+                            <span class="block text-sm text-jardin-orange mt-2 break-all">vaas.fr ↗</span>
+                        </span>
+                    </a>
+                    <a href="https://www.lemoulinderotrou.com/" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-6 flex items-start gap-4 border-t-4 border-jardin-vert">
+                        <span class="text-4xl flex-shrink-0">🌾</span>
+                        <span class="flex-1 min-w-0">
+                            <span class="block text-xl font-bold text-jardin-vert group-hover:text-jardin-orange transition-colors">Le Moulin de Rotrou</span>
+                            <span class="block text-gray-700 mt-1">Moulin de Vaas : visites, ateliers, activités et événements. Partenaire de nos jardins pédagogiques.</span>
+                            <span class="block text-sm text-jardin-orange mt-2 break-all">lemoulinderotrou.com ↗</span>
+                        </span>
+                    </a>
+                    <a href="https://www.facebook.com/p/Les-Ateliers-de-demain-Tiers-lieu-Aubign%C3%A9-Racan-61582958757000/" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-6 flex items-start gap-4 border-t-4 border-jardin-vert">
+                        <span class="text-4xl flex-shrink-0">🛠️</span>
+                        <span class="flex-1 min-w-0">
+                            <span class="block text-xl font-bold text-jardin-vert group-hover:text-jardin-orange transition-colors">Les Ateliers de Demain</span>
+                            <span class="block text-gray-700 mt-1">Le tiers-lieu de nos futures expériences.</span>
+                            <span class="block text-sm text-jardin-orange mt-2 break-all">Page Facebook ↗</span>
+                        </span>
+                    </a>
+                    <a href="https://www.syndicatvaldeloir.fr/" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all p-6 flex items-start gap-4 border-t-4 border-jardin-vert">
+                        <span class="text-4xl flex-shrink-0">♻️</span>
+                        <span class="flex-1 min-w-0">
+                            <span class="block text-xl font-bold text-jardin-vert group-hover:text-jardin-orange transition-colors">Syndicat Mixte du Val de Loir</span>
+                            <span class="block text-gray-700 mt-1">Collecte des déchets, biodéchets et compostage.</span>
+                            <span class="block text-sm text-jardin-orange mt-2 break-all">syndicatvaldeloir.fr ↗</span>
+                        </span>
+                    </a>
+                </div>
+
+                <p class="text-sm text-gray-500 text-center mt-8">
+                    Les liens s'ouvrent dans un nouvel onglet.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-jardin-vert text-white mt-16">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Colonne 1 : À propos -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <span class="text-2xl mr-2">🌱</span>
+                        Le Jardinier Sarthois
+                    </h3>
+                    <p class="text-jardin-beige text-sm">
+                        Association de jardinage de la section Aubigné-Racan / Vaas.
+                        Partage de connaissances et passion du jardinage.
+                    </p>
+                </div>
+
+                <!-- Colonne 2 : Navigation -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="../../index.html" class="text-jardin-beige hover:text-white transition">Accueil</a></li>
+                        <li><a href="a-propos.html" class="text-jardin-beige hover:text-white transition">À propos</a></li>
+                        <li><a href="actualites.html" class="text-jardin-beige hover:text-white transition">Actualités</a></li>
+                        <li><a href="agenda.html" class="text-jardin-beige hover:text-white transition">Agenda</a></li>
+                        <li><a href="galerie.html" class="text-jardin-beige hover:text-white transition">Galerie</a></li>
+                        <li><a href="tarifs.html" class="text-jardin-beige hover:text-white transition">Tarifs</a></li>
+                        <li><a href="calendrier-semis.html" class="text-jardin-beige hover:text-white transition">Calendrier des semis</a></li>
+                        <li><a href="liens.html" class="text-white font-semibold">Liens utiles</a></li>
+                        <li><a href="contact.html" class="text-jardin-beige hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : Contact rapide -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact rapide</h3>
+                    <ul class="space-y-2 text-sm text-jardin-beige">
+                        <li>📧 <a href="mailto:contact@lejardiniersarthoisaubignevaas.fr" class="hover:text-white transition">contact@lejardiniersarthoisaubignevaas.fr</a></li>
+                        <li>📞 Claude Péan : <a href="tel:0644975136" class="hover:text-white transition">06 44 97 51 36</a></li>
+                        <li>📞 Monique Surut : <a href="tel:0677065965" class="hover:text-white transition">06 77 06 59 65</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-jardin-vert-light mt-8 pt-8 text-center text-sm text-jardin-beige">
+                <p>&copy; 2026 Le Jardinier Sarthois - Section Aubigné-Racan / Vaas. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

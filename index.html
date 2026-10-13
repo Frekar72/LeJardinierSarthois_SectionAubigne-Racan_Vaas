@@ -21,6 +21,15 @@
 
     <!-- Tailwind CSS compilé -->
     <link rel="stylesheet" href="src/css/output.css">
+    <!-- Classes absentes de output.css (menu complet à partir de 1280px) -->
+    <style>
+        .whitespace-nowrap { white-space: nowrap; }
+        .space-x-6 > :not(:last-child) { margin-right: 1.5rem; }
+        @media (min-width: 1280px) {
+            .xl\:flex { display: flex; }
+            .xl\:hidden { display: none; }
+        }
+    </style>
 </head>
 <body class="font-sans antialiased bg-white" data-page="home">
 
@@ -38,7 +47,7 @@
                 </a>
 
                 <!-- Navigation Desktop -->
-                <ul class="hidden md:flex space-x-8 items-center">
+                <ul class="hidden xl:flex space-x-6 items-center whitespace-nowrap">
                     <li><a href="index.html" class="hover:text-jardin-orange transition-colors font-medium border-b-2 border-jardin-orange pb-1">Accueil</a></li>
                     <li><a href="src/pages/a-propos.html" class="hover:text-jardin-orange transition-colors">À propos</a></li>
                     <li><a href="src/pages/actualites.html" class="hover:text-jardin-orange transition-colors">Actualités</a></li>
@@ -46,12 +55,13 @@
                     <li><a href="src/pages/galerie.html" class="hover:text-jardin-orange transition-colors">Galerie</a></li>
                     <li><a href="src/pages/tarifs.html" class="hover:text-jardin-orange transition-colors">Tarifs</a></li>
                     <li><a href="src/pages/calendrier-semis.html" class="hover:text-jardin-orange transition-colors">Calendrier des semis</a></li>
+                    <li><a href="src/pages/liens.html" class="hover:text-jardin-orange transition-colors">Liens utiles</a></li>
                     <li><a href="src/pages/contact.html" class="bg-jardin-orange hover:bg-jardin-orange-light px-6 py-2 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">Contact</a></li>
                     <li><a href="https://www.facebook.com/profile.php?id=61587806053490" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all" style="background-color: #1877F2;" title="Suivez-nous sur Facebook" aria-label="Suivez-nous sur Facebook (nouvelle fenêtre)"><span class="text-xl font-bold">f</span></a></li>
                 </ul>
 
                 <!-- Menu Burger Mobile -->
-                <button id="mobileMenuBtn" class="md:hidden text-white focus:outline-none" aria-label="Ouvrir le menu">
+                <button id="mobileMenuBtn" class="xl:hidden text-white focus:outline-none" aria-label="Ouvrir le menu">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -59,7 +69,7 @@
             </div>
 
             <!-- Menu Mobile -->
-            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+            <div id="mobileMenu" class="hidden xl:hidden mt-4 pb-4">
                 <ul class="flex flex-col space-y-3">
                     <li><a href="index.html" class="block py-2 px-4 bg-jardin-vert-dark rounded hover:bg-jardin-orange transition-colors">Accueil</a></li>
                     <li><a href="src/pages/a-propos.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">À propos</a></li>
@@ -68,6 +78,7 @@
                     <li><a href="src/pages/galerie.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Galerie</a></li>
                     <li><a href="src/pages/tarifs.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Tarifs</a></li>
                     <li><a href="src/pages/calendrier-semis.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Calendrier des semis</a></li>
+                    <li><a href="src/pages/liens.html" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Liens utiles</a></li>
                     <li><a href="src/pages/contact.html" class="block py-2 px-4 bg-jardin-orange rounded hover:bg-jardin-orange-light transition-colors font-semibold">Contact</a></li>
                     <li><a href="https://www.facebook.com/profile.php?id=61587806053490" target="_blank" rel="noopener noreferrer" class="block py-2 px-4 hover:bg-jardin-vert-dark rounded transition-colors">Suivez-nous sur Facebook</a></li>
                 </ul>
@@ -83,6 +94,7 @@
                 src="public/images/equipe-stand-jardinier-sarthois.jpg"
                 alt="Les membres du Jardinier Sarthois, tabliers verts et chapeaux de paille, devant leur stand de légumes et de fleurs"
                 class="w-full h-full object-cover object-center opacity-55"
+                style="height: 100%;"
                 loading="eager"
             >
             <div class="absolute inset-0 bg-gradient-to-b from-jardin-vert/50 to-jardin-vert-dark/80"></div>
@@ -349,6 +361,7 @@
                         <li><a href="src/pages/galerie.html" class="hover:text-jardin-orange transition-colors">Galerie</a></li>
                         <li><a href="src/pages/tarifs.html" class="hover:text-jardin-orange transition-colors">Tarifs</a></li>
                         <li><a href="src/pages/calendrier-semis.html" class="hover:text-jardin-orange transition-colors">Calendrier des semis</a></li>
+                        <li><a href="src/pages/liens.html" class="hover:text-jardin-orange transition-colors">Liens utiles</a></li>
                         <li><a href="src/pages/contact.html" class="hover:text-jardin-orange transition-colors">Contact</a></li>
                     </ul>
                 </div>
